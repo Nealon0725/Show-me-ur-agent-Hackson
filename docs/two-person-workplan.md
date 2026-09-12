@@ -1,4 +1,6 @@
-# 两人开发分工：Singapore SME Resume Screening Agent
+# 已废弃：两人开发分工
+
+团队现已确认为三人分工。请使用 `docs/three-person-workplan.md`，本文件仅保留历史记录。
 
 ## 1. 产品目标
 
