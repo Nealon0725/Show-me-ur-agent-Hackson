@@ -44,3 +44,31 @@ class CandidateEvidenceFixtureTests(unittest.TestCase):
             }
 
             self.assertEqual(actual, expected)
+
+    def test_fixture_has_unique_ids_and_allowed_statuses(self):
+        fixture = json.loads(
+            (ROOT / "data" / "ground_truth" / "candidate_evidence.json")
+            .read_text(encoding="utf-8")
+        )
+        allowed_statuses = {
+            "evidenced",
+            "not_met",
+            "unknown",
+            "needs_review",
+        }
+
+        candidate_ids = [
+            candidate["candidate_id"]
+            for candidate in fixture["candidates"]
+        ]
+        self.assertEqual(len(candidate_ids), len(set(candidate_ids)))
+
+        for candidate in fixture["candidates"]:
+            criterion_ids = [
+                evidence["criterion_id"]
+                for evidence in candidate["evidence"]
+            ]
+            self.assertEqual(len(criterion_ids), len(set(criterion_ids)))
+
+            for evidence in candidate["evidence"]:
+                self.assertIn(evidence["status"], allowed_statuses)
