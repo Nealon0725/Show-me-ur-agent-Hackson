@@ -1,0 +1,27 @@
+Arden Pillai
+Software Engineer
+cv-021@example.com | Singapore
+
+PROFILE
+Backend software engineer with four years of commercial development experience. The employment history below lists my only role. Focused on reliable integrations and maintainable services.
+
+SKILLS
+TypeScript; Node.js; MySQL; Git; Jest
+
+EXPERIENCE
+Software Engineer | Lantern Vale Services
+2025-09 to 2026-08
+- Built Node.js API handlers for contract renewal and invoice draft generation with approval and validation rules.
+- Created MySQL schemas and SQL reporting queries for customer contracts, renewals and invoice lines.
+- Used Git peer review and automated Jest tests for renewal dates, pricing rules and access checks.
+
+SELECTED PROJECT
+Data migration: checked imported contracts for missing renewal dates and recorded exceptions for the account manager.
+
+EDUCATION
+Diploma in Computing, Westridge Institute, 2023
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

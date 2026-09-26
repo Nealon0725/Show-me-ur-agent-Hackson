@@ -25,6 +25,14 @@ def handler(workflow):
                 self.reply(200, (ROOT / 'frontend/index.html').read_bytes(), 'text/html')
             elif self.path == '/api/demo':
                 self.reply(200, json.loads((ROOT / 'data/demo.json').read_text(encoding='utf-8')))
+            elif self.path == '/api/dataset':
+                dataset = ROOT / 'data/agent_b_dataset/inputs'
+                if not dataset.exists():
+                    self.reply(404, {'error': 'Agent B dataset is not installed.'})
+                    return
+                resumes = [json.loads(line) for line in (dataset / 'resumes.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
+                jobs = json.loads((dataset / 'jobs/jobs.json').read_text(encoding='utf-8'))
+                self.reply(200, {'jobs': jobs, 'resumes': resumes, 'count': len(resumes)})
             elif self.path.startswith('/api/runs/'):
                 try:
                     self.reply(200, workflow.get(self.path.split('/')[-1]))

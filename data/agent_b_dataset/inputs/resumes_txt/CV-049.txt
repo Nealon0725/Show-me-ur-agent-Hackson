@@ -1,0 +1,27 @@
+Avery Chen
+Junior Software Developer
+cv-049@example.com | Singapore
+
+PROFILE
+Junior Software Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; FastAPI; PostgreSQL; Git; pytest
+
+EXPERIENCE
+Junior Software Developer | Lantern Quay Services
+2025-09 to 2026-08
+- Implemented Python API endpoints for stock enquiries and low-stock alerts under the guidance of a senior developer.
+- Wrote PostgreSQL joins and a migration for supplier lead-time fields used by the purchasing dashboard.
+- Submitted Git pull requests and added pytest tests for empty orders, missing supplier codes and duplicate notifications.
+
+SELECTED PROJECT
+Capstone, before employment: built a small inventory demo with sample data. It was an academic project without commercial users.
+
+EDUCATION
+Diploma in Software Development, North Quay College, 2025
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

@@ -1,0 +1,27 @@
+Morgan Teo
+Web Application Developer
+cv-001@example.com | Singapore
+
+PROFILE
+Web Application Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+JavaScript; Express; PostgreSQL; Git; Jest; AWS
+
+EXPERIENCE
+Web Application Developer | Juniper Quay Services
+2020-05 to 2026-08
+- Built Express-based service routes for service tickets and technician scheduling, including permission checks and conflict handling.
+- Developed PostgreSQL data models and SQL reporting views for ticket turnaround and parts consumption.
+- Maintained a Git review workflow and automated Jest tests for service calculations and schedule conflicts in continuous integration.
+
+SELECTED PROJECT
+Deployment project: packaged the service for a managed cloud environment and wrote a recovery runbook for failed releases.
+
+EDUCATION
+BSc in Software Systems, Maple Coast Institute, 2020
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

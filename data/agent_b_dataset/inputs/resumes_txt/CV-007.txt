@@ -1,0 +1,27 @@
+Remy Wong
+Sales Data Coordinator
+cv-007@example.com | Singapore
+
+PROFILE
+Sales Data Coordinator focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+HubSpot; Excel; Pivot tables; XLOOKUP
+
+EXPERIENCE
+Sales Data Coordinator | Cobalt Dock Services
+2020-10 to 2026-08
+- Maintained HubSpot opportunities, lead sources and account owner details for a B2B consulting team.
+- Used Excel pivot tables and XLOOKUP to reconcile pipeline exports and produce weekly activity reports by service line.
+- Prepared internal analysis only. Account managers created all quotations and handled customer follow-up and order handovers.
+
+SELECTED PROJECT
+Data quality project: designed a list of required CRM fields and reviewed exceptions with the sales manager each Friday.
+
+EDUCATION
+BSc in Business Analytics, Seabrook Polytechnic, 2020
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

@@ -1,0 +1,27 @@
+Quinn Yeo
+Internal Tools Developer
+cv-055@example.com | Singapore
+
+PROFILE
+Internal Tools Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; Flask; MySQL; Git; Manual testing
+
+EXPERIENCE
+Internal Tools Developer | Amber Vale Services
+2023-02 to 2026-08
+- Built Flask APIs for equipment check-out and maintenance booking, including rules to prevent conflicting reservations.
+- Maintained MySQL asset and booking tables, SQL joins and migration scripts for additional maintenance fields.
+- Used Git to share changes with one colleague. Testing consisted of a manual spreadsheet checklist; I have not written automated tests.
+
+SELECTED PROJECT
+Equipment audit: reconciled device labels with the asset system and created an import template for future stocktakes.
+
+EDUCATION
+Diploma in IT Applications, Riverstone College, 2022
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

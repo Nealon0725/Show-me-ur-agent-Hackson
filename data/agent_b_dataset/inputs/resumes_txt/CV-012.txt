@@ -1,0 +1,27 @@
+Sage Lau
+Digital Content Coordinator
+cv-012@example.com | Singapore
+
+PROFILE
+Digital Content Coordinator focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; JavaScript; SQL; Git; AWS; Content editing
+
+EXPERIENCE
+Digital Content Coordinator | Cedar Vale Services
+2022-01 to 2026-08
+- Published product descriptions in a content management system and maintained image naming conventions for a retail catalogue.
+- Copied weekly sales figures from a vendor dashboard into a presentation and checked product names with the merchandising team.
+- Completed introductory videos covering Python, JavaScript, SQL and Git. I have no coding project or software delivery work to list.
+
+SELECTED PROJECT
+Catalogue refresh: coordinated content checks with three product owners and maintained a register of missing images.
+
+EDUCATION
+Diploma in Digital Communications, Orchard Bay College, 2021
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

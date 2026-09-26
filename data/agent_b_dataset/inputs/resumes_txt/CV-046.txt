@@ -1,0 +1,27 @@
+Ellis Seah
+Software Developer
+cv-046@example.com | Singapore
+
+PROFILE
+Software Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; Django; PostgreSQL; Git; pytest
+
+EXPERIENCE
+Software Developer | Quartz Vale Services
+2023-03 to 2026-08
+- Implemented Django service endpoints for warranty claims and case assignment with input and permission checks.
+- Worked on a PostgreSQL-backed application alongside a shared data team responsible for database changes and reporting support.
+- Used Git merge requests and wrote pytest tests for claim validation and assignment rules.
+
+SELECTED PROJECT
+Customer claim portal: documented common error messages and improved the sequence of fields in the submission form.
+
+EDUCATION
+BSc in Applied Computing, Lighthouse Technical College, 2022
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

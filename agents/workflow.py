@@ -13,7 +13,7 @@ class Workflow:
     def create(self, jd, resumes):
         job = parse_jd(jd)
         job["criteria_version"] = 1
-        if not isinstance(resumes, list) or not 1 <= len(resumes) <= 30: raise ValueError('Provide 1–30 resumes.')
+        if not isinstance(resumes, list) or not 1 <= len(resumes) <= 60: raise ValueError('Provide 1–60 resumes.')
         for resume in resumes: lines(resume)
         state = {"job": job, "criteria_confirmed": False, "workflow_state": "AWAITING_CRITERIA_CONFIRMATION", "events": [], "candidates": [{"id": "C%03d" % (i + 1), "text": text, "answers": {}, "round": 0, "action": "CONFIRM_CRITERIA", "state": "AWAITING_CRITERIA_CONFIRMATION", "decision": None} for i, text in enumerate(resumes)]}
         self.event(state, "JD_PARSED", None, "Human confirmation required before screening.")

@@ -1,0 +1,110 @@
+[
+  {
+    "job_id": "JD-001",
+    "title": "Software Developer - SME Workflow Applications",
+    "company": "Cedar Quay Systems (fictional SME)",
+    "minimum_months": 24,
+    "purpose": "Build and maintain order, inventory and customer workflow applications for small business clients in Singapore.",
+    "criteria": [
+      [
+        "C1",
+        "At least 24 distinct calendar months of commercial software development. Paid contracts and internships count; personal projects do not."
+      ],
+      [
+        "C2",
+        "Evidence of implementing backend business logic and HTTP APIs in Python or JavaScript/TypeScript."
+      ],
+      [
+        "C3",
+        "Evidence of SQL queries, relational data modelling or database migrations in a delivered application."
+      ],
+      [
+        "C4",
+        "Evidence of both Git-based collaboration and automated software tests."
+      ]
+    ],
+    "preferred": [
+      "React interface development",
+      "Cloud deployment or CI/CD",
+      "Relevant certification, if stated and current"
+    ],
+    "education": "Relevant qualification or equivalent practical experience. A degree is not mandatory.",
+    "responsibilities": [
+      "Implement backend features and data integrations.",
+      "Maintain database changes, tests and code reviews.",
+      "Work with SME operations staff to clarify requirements."
+    ]
+  },
+  {
+    "job_id": "JD-002",
+    "title": "Sales Operations Executive - B2B Services",
+    "company": "Willow Bridge Business Services (fictional SME)",
+    "minimum_months": 12,
+    "purpose": "Maintain a reliable B2B sales pipeline, prepare weekly reports and coordinate accurate quotes and handovers.",
+    "criteria": [
+      [
+        "C1",
+        "At least 12 distinct calendar months supporting B2B sales operations or B2B sales administration. Paid internships count."
+      ],
+      [
+        "C2",
+        "Evidence of maintaining CRM customer, opportunity or pipeline records."
+      ],
+      [
+        "C3",
+        "Evidence of spreadsheet sales reporting using pivot tables or lookup functions."
+      ],
+      [
+        "C4",
+        "Evidence of preparing B2B quotations and coordinating customer follow-up or order handover."
+      ]
+    ],
+    "preferred": [
+      "HubSpot, Salesforce or Zoho experience; equivalent CRMs are acceptable",
+      "Process documentation",
+      "Relevant certification, if stated and current"
+    ],
+    "education": "Business-related qualification or equivalent practical experience. A degree is not mandatory.",
+    "responsibilities": [
+      "Keep opportunity stages and customer records current.",
+      "Produce weekly pipeline and sales reports.",
+      "Coordinate quotations, follow-ups and delivery handovers."
+    ]
+  },
+  {
+    "job_id": "JD-003",
+    "title": "Accounts Assistant - SME Finance Operations",
+    "company": "Harbour Fern Supplies (fictional SME)",
+    "minimum_months": 12,
+    "purpose": "Support accurate supplier payments, customer collections and month-end bookkeeping for a small distributor.",
+    "criteria": [
+      [
+        "C1",
+        "At least 12 distinct calendar months of bookkeeping or accounts support. Paid internships count."
+      ],
+      [
+        "C2",
+        "Evidence of both accounts payable and accounts receivable tasks."
+      ],
+      [
+        "C3",
+        "Evidence of performing bank reconciliations and investigating differences."
+      ],
+      [
+        "C4",
+        "Evidence of using both spreadsheets and accounting software for finance tasks."
+      ]
+    ],
+    "preferred": [
+      "Month-end close support",
+      "GST working-paper preparation under supervision",
+      "Relevant certification, if stated and current"
+    ],
+    "education": "Accounting-related qualification or equivalent practical experience. A degree is not mandatory.",
+    "responsibilities": [
+      "Process invoices, receipts and payment records.",
+      "Reconcile bank activity and investigate exceptions.",
+      "Maintain working papers and support month-end close."
+    ]
+  }
+]

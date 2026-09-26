@@ -1,0 +1,298 @@
+﻿candidate_id,job_id,criterion_id,status,source_section,evidence_quote,interpretation
+CV-001,JD-001,C1,demonstrated,EXPERIENCE,"Web Application Developer | Juniper Quay Services
+2020-05 to 2026-08",Visible relevant duration: 76 calendar months.
+CV-001,JD-001,C2,demonstrated,EXPERIENCE,"Built Express-based service routes for service tickets and technician scheduling, including permission checks and conflict handling.",Concrete task evidence in the resume.
+CV-001,JD-001,C3,demonstrated,EXPERIENCE,Developed PostgreSQL data models and SQL reporting views for ticket turnaround and parts consumption.,Concrete task evidence in the resume.
+CV-001,JD-001,C4,demonstrated,EXPERIENCE,Maintained a Git review workflow and automated Jest tests for service calculations and schedule conflicts in continuous integration.,Concrete task evidence in the resume.
+CV-002,JD-003,C1,not_evidenced,EXPERIENCE,"Office Administrator | Cedar Field Services
+2022-03 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-002,JD-003,C2,not_evidenced,EXPERIENCE,Booked meeting rooms and maintained an office supplies register for an administrative team.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-002,JD-003,C3,explicitly_not_met,EXPERIENCE,Forwarded supplier invoices to the external accountant and filed payment confirmations when received.,The resume explicitly limits this experience.
+CV-002,JD-003,C4,explicitly_not_met,EXPERIENCE,"Read introductory material about Xero, QuickBooks, AP and AR. I have not posted ledger transactions or reconciled a bank account.",The resume explicitly limits this experience.
+CV-003,JD-002,C1,explicitly_not_met,EXPERIENCE,"Sales Administration Trainee | Maple Dock Services
+2026-04 to 2026-08",Visible relevant duration: 5 calendar months.
+CV-003,JD-002,C2,demonstrated,EXPERIENCE,Updated Zoho CRM contacts and next-action dates for a B2B pest-control team during a paid traineeship.,Concrete task evidence in the resume.
+CV-003,JD-002,C3,explicitly_not_met,EXPERIENCE,Copied weekly CRM totals into Excel and applied filters. Pivot tables and lookup formulas were outside my assigned work.,The resume explicitly limits this experience.
+CV-003,JD-002,C4,demonstrated,EXPERIENCE,"Prepared draft quotations under supervision, requested missing site details and helped transfer confirmed jobs to scheduling.",Concrete task evidence in the resume.
+CV-004,JD-003,C1,demonstrated,EXPERIENCE,"Finance Support Assistant | Quartz Field Services
+2023-06 to 2026-08",Visible relevant duration: 39 calendar months.
+CV-004,JD-003,C2,demonstrated,EXPERIENCE,"Entered supplier bills, prepared payment requests, raised customer invoices and allocated receipts to open balances.",Concrete task evidence in the resume.
+CV-004,JD-003,C3,unclear,EXPERIENCE,"Assisted with bank reconciliation packs, checked supporting paperwork and passed unmatched items to the accountant.",The scope of personal contribution needs clarification.
+CV-004,JD-003,C4,demonstrated,EXPERIENCE,Used MYOB to post approved transactions and Excel lookups to check invoice references and account schedules.,Concrete task evidence in the resume.
+CV-005,JD-002,C1,unclear,EXPERIENCE,"Sales Operations Coordinator | Juniper Dock Services
+Start date not stated to 2026-08",Duration cannot be established from the supplied dates.
+CV-005,JD-002,C2,demonstrated,EXPERIENCE,"Maintained HubSpot company, contact and opportunity records for a B2B recycling-services team.",Concrete task evidence in the resume.
+CV-005,JD-002,C3,demonstrated,EXPERIENCE,Used Excel pivot tables and XLOOKUP to report quote ageing and reconcile customer service categories.,Concrete task evidence in the resume.
+CV-005,JD-002,C4,demonstrated,EXPERIENCE,"Prepared service quotations, followed up on collection requirements and handed confirmed orders to route planners.",Concrete task evidence in the resume.
+CV-006,JD-003,C1,demonstrated,EXPERIENCE,"Finance Operations Assistant | Juniper Bridge Services
+2020-10 to 2026-08",Visible relevant duration: 71 calendar months.
+CV-006,JD-003,C2,demonstrated,EXPERIENCE,"Maintained supplier bills and payment runs, issued customer invoices and reconciled receipt allocations with outstanding debtor items.",Concrete task evidence in the resume.
+CV-006,JD-003,C3,demonstrated,EXPERIENCE,Reconciled bank statements against cash-book balances and investigated returned payments and unexplained deposits.,Concrete task evidence in the resume.
+CV-006,JD-003,C4,demonstrated,EXPERIENCE,Used Sage for accounting entries and Excel pivot summaries and lookup checks to prepare ledger-review schedules.,Concrete task evidence in the resume.
+CV-007,JD-002,C1,demonstrated,EXPERIENCE,"Sales Data Coordinator | Cobalt Dock Services
+2020-10 to 2026-08",Visible relevant duration: 71 calendar months.
+CV-007,JD-002,C2,demonstrated,EXPERIENCE,"Maintained HubSpot opportunities, lead sources and account owner details for a B2B consulting team.",Concrete task evidence in the resume.
+CV-007,JD-002,C3,demonstrated,EXPERIENCE,Used Excel pivot tables and XLOOKUP to reconcile pipeline exports and produce weekly activity reports by service line.,Concrete task evidence in the resume.
+CV-007,JD-002,C4,explicitly_not_met,EXPERIENCE,Prepared internal analysis only. Account managers created all quotations and handled customer follow-up and order handovers.,The resume explicitly limits this experience.
+CV-008,JD-003,C1,not_evidenced,EXPERIENCE,"Bank Service Representative | Willow Field Services
+2020-06 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-008,JD-003,C2,not_evidenced,EXPERIENCE,Handled customer account enquiries and explained routine service procedures at a bank service counter.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-008,JD-003,C3,explicitly_not_met,EXPERIENCE,Balanced my cash drawer against daily receipts. I did not reconcile a company bank statement to a bookkeeping ledger.,The resume explicitly limits this experience.
+CV-008,JD-003,C4,not_evidenced,EXPERIENCE,Used the bank service application for customer requests. No spreadsheet bookkeeping or accounting-software work is listed.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-009,JD-001,C1,explicitly_not_met,EXPERIENCE,"Trainee Developer | Fern Vale Services
+2026-01 to 2026-08",Visible relevant duration: 8 calendar months.
+CV-009,JD-001,C2,demonstrated,EXPERIENCE,"Implemented FastAPI routes for a document upload queue during a paid traineeship, with validation and retry handling.",Concrete task evidence in the resume.
+CV-009,JD-001,C3,explicitly_not_met,EXPERIENCE,Used MongoDB for upload metadata. No SQL or relational database work is included in my training or employment projects.,The resume explicitly limits this experience.
+CV-009,JD-001,C4,demonstrated,EXPERIENCE,Used Git pull requests and wrote pytest checks for duplicate uploads and invalid file types.,Concrete task evidence in the resume.
+CV-010,JD-001,C1,demonstrated,EXPERIENCE,"Backend Developer | Fern Quay Services
+2022-09 to 2026-08",Visible relevant duration: 48 calendar months.
+CV-010,JD-001,C2,demonstrated,EXPERIENCE,"Developed Django API views for purchase approval limits and approval reassignment, with role checks for finance and operations users.",Concrete task evidence in the resume.
+CV-010,JD-001,C3,demonstrated,EXPERIENCE,"Maintained relational models and SQL reports across purchase orders, suppliers and invoice records, including reversible schema changes.",Concrete task evidence in the resume.
+CV-010,JD-001,C4,demonstrated,EXPERIENCE,"Worked through Git branches and peer review, and wrote unittest cases for approval routing and invoice total calculations.",Concrete task evidence in the resume.
+CV-011,JD-002,C1,demonstrated,EXPERIENCE,"Sales Operations Executive | Amber Grove Services
+2023-04 to 2026-08",Visible relevant duration: 41 calendar months.
+CV-011,JD-002,C2,demonstrated,EXPERIENCE,"Maintained HubSpot company and opportunity records for a B2B facilities-services team, checking deal stages and duplicate contacts each week.",Concrete task evidence in the resume.
+CV-011,JD-002,C3,demonstrated,EXPERIENCE,"Built Excel pivot-table pipeline reports and XLOOKUP checks to align deal owners, quoted amounts and expected close dates.",Concrete task evidence in the resume.
+CV-011,JD-002,C4,demonstrated,EXPERIENCE,"Prepared service quotations, tracked customer follow-up dates and handed approved orders to the scheduling team with scope details.",Concrete task evidence in the resume.
+CV-012,JD-001,C1,not_evidenced,EXPERIENCE,"Digital Content Coordinator | Cedar Vale Services
+2022-01 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-012,JD-001,C2,not_evidenced,EXPERIENCE,Published product descriptions in a content management system and maintained image naming conventions for a retail catalogue.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-012,JD-001,C3,not_evidenced,EXPERIENCE,Copied weekly sales figures from a vendor dashboard into a presentation and checked product names with the merchandising team.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-012,JD-001,C4,not_evidenced,EXPERIENCE,"Completed introductory videos covering Python, JavaScript, SQL and Git. I have no coding project or software delivery work to list.",No qualifying task evidence is stated; absence is not proof of inability.
+CV-013,JD-003,C1,demonstrated,EXPERIENCE,"Accounts Trainee | Harbour Bridge Services
+2025-09 to 2026-08",Visible relevant duration: 12 calendar months.
+CV-013,JD-003,C2,demonstrated,EXPERIENCE,"During a paid accounts traineeship, entered supplier bills, prepared payment lists, raised sales invoices and allocated customer receipts under review.",Concrete task evidence in the resume.
+CV-013,JD-003,C3,demonstrated,EXPERIENCE,Completed monthly bank reconciliations and investigated unmatched transfers with the finance supervisor.,Concrete task evidence in the resume.
+CV-013,JD-003,C4,demonstrated,EXPERIENCE,Posted approved transactions in QuickBooks and used Excel lookups to check invoice references and ageing balances.,Concrete task evidence in the resume.
+CV-014,JD-003,C1,not_evidenced,EXPERIENCE,"Inventory Data Assistant | Harbour Field Services
+2021-01 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-014,JD-003,C2,not_evidenced,EXPERIENCE,Updated warehouse stock movements and checked supplier delivery quantities against goods-receipt records.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-014,JD-003,C3,explicitly_not_met,EXPERIENCE,Reconciled physical stock counts with inventory records. Bank-statement reconciliation was outside my work.,The resume explicitly limits this experience.
+CV-014,JD-003,C4,explicitly_not_met,EXPERIENCE,Used Excel and warehouse inventory screens in an ERP system. I did not use its accounting module or maintain financial ledgers.,The resume explicitly limits this experience.
+CV-015,JD-002,C1,demonstrated,EXPERIENCE,"Sales Administration Executive | Quartz Grove Services
+2022-05 to 2026-08",Visible relevant duration: 52 calendar months.
+CV-015,JD-002,C2,explicitly_not_met,EXPERIENCE,Tracked B2B customer contacts and open deals in local spreadsheets. The company did not use CRM software and I have not maintained a CRM.,The resume explicitly limits this experience.
+CV-015,JD-002,C3,demonstrated,EXPERIENCE,"Produced Excel pivot reports and XLOOKUP checks linking quotations, approved price lists and sales orders.",Concrete task evidence in the resume.
+CV-015,JD-002,C4,demonstrated,EXPERIENCE,"Prepared quotations for office consumables, followed up on approvals and handed confirmed order quantities to the warehouse.",Concrete task evidence in the resume.
+CV-016,JD-002,C1,demonstrated,EXPERIENCE,"Sales Support Executive | Amber Dock Services
+2023-01 to 2026-08",Visible relevant duration: 44 calendar months.
+CV-016,JD-002,C2,demonstrated,EXPERIENCE,"Maintained Salesforce account details, deal stages and activity notes for a B2B security-services sales team.",Concrete task evidence in the resume.
+CV-016,JD-002,C3,explicitly_not_met,EXPERIENCE,Used Excel for data entry and basic sums. I have not used pivot tables or lookup functions for sales reporting.,The resume explicitly limits this experience.
+CV-016,JD-002,C4,demonstrated,EXPERIENCE,"Prepared service quotations from a rate card, coordinated customer clarifications and passed confirmed scope to operations.",Concrete task evidence in the resume.
+CV-017,JD-001,C1,not_evidenced,EXPERIENCE,"Business Systems Analyst | Maple Vale Services
+2020-01 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-017,JD-001,C2,explicitly_not_met,EXPERIENCE,Collected requirements and tested an external vendor portal. Python study is limited to introductory exercises; I did not implement backend APIs.,The resume explicitly limits this experience.
+CV-017,JD-001,C3,demonstrated,EXPERIENCE,Wrote SQL joins against the reporting database to reconcile customer orders with billed service usage.,Concrete task evidence in the resume.
+CV-017,JD-001,C4,demonstrated,EXPERIENCE,"Used Git pull requests and wrote automated pytest acceptance tests for vendor-delivered workflows, while the vendor owned backend implementation.",Concrete task evidence in the resume.
+CV-018,JD-001,C1,demonstrated,EXPERIENCE,"Application Developer | Quartz Quay Services
+2022-11 to 2026-08",Visible relevant duration: 46 calendar months.
+CV-018,JD-001,C2,demonstrated,EXPERIENCE,Developed TypeScript API routes and workflow rules for customer service requests with validation and access control.,Concrete task evidence in the resume.
+CV-018,JD-001,C3,explicitly_not_met,EXPERIENCE,Stored application records in MongoDB collections and wrote document aggregation pipelines. I have not used a relational SQL database in project work.,The resume explicitly limits this experience.
+CV-018,JD-001,C4,demonstrated,EXPERIENCE,"Used Git branches and reviews and maintained Jest tests for request routing, permissions and failed writes.",Concrete task evidence in the resume.
+CV-019,JD-002,C1,demonstrated,EXPERIENCE,"Sales Support Specialist | Cedar Grove Services
+2021-06 to 2026-08",Visible relevant duration: 63 calendar months.
+CV-019,JD-002,C2,demonstrated,EXPERIENCE,Kept HubSpot customer and opportunity details current for a B2B training provider and reviewed missing follow-up activities weekly.,Concrete task evidence in the resume.
+CV-019,JD-002,C3,demonstrated,EXPERIENCE,Built Google Sheets pivot tables for course bookings and VLOOKUP checks against contracted customer rates.,Concrete task evidence in the resume.
+CV-019,JD-002,C4,demonstrated,EXPERIENCE,"Prepared corporate training quotations, followed up on attendee numbers and handed confirmed bookings to course coordinators.",Concrete task evidence in the resume.
+CV-020,JD-001,C1,not_evidenced,EXPERIENCE,"Data Reporting Analyst | Willow Vale Services
+2021-05 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-020,JD-001,C2,not_evidenced,EXPERIENCE,Prepared weekly operational reports and clarified metric definitions with warehouse supervisors.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-020,JD-001,C3,demonstrated,EXPERIENCE,"Created SQL queries and relational reporting views to reconcile dispatch, return and supplier data.",Concrete task evidence in the resume.
+CV-020,JD-001,C4,not_evidenced,EXPERIENCE,Tracked report changes in shared documents and validated totals manually against exported source files.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-021,JD-001,C1,unclear,PROFILE + EXPERIENCE,Backend software engineer with four years of commercial development experience. The employment history below lists my only role. Focused on reliable integrations and maintainable services.,Summary claims four years; the only dated role covers 12 months. Clarify missing roles or incorrect dates.
+CV-021,JD-001,C2,demonstrated,EXPERIENCE,Built Node.js API handlers for contract renewal and invoice draft generation with approval and validation rules.,Concrete task evidence in the resume.
+CV-021,JD-001,C3,demonstrated,EXPERIENCE,"Created MySQL schemas and SQL reporting queries for customer contracts, renewals and invoice lines.",Concrete task evidence in the resume.
+CV-021,JD-001,C4,demonstrated,EXPERIENCE,"Used Git peer review and automated Jest tests for renewal dates, pricing rules and access checks.",Concrete task evidence in the resume.
+CV-022,JD-002,C1,not_evidenced,EXPERIENCE,"Warehouse Administrator | Harbour Dock Services
+2021-03 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-022,JD-002,C2,not_evidenced,EXPERIENCE,Maintained goods-receipt records and delivery paperwork for a warehouse operations team.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-022,JD-002,C3,not_evidenced,EXPERIENCE,Built Excel pivot tables and lookup checks for weekly stock movements. No sales or pipeline reporting responsibilities are listed.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-022,JD-002,C4,not_evidenced,EXPERIENCE,Confirmed dispatch quantities internally with warehouse supervisors and filed signed delivery notes after completion.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-023,JD-002,C1,demonstrated,EXPERIENCE,"Commercial Operations Coordinator | Cobalt Grove Services
+2022-01 to 2026-08",Visible relevant duration: 56 calendar months.
+CV-023,JD-002,C2,demonstrated,EXPERIENCE,"Updated Salesforce opportunity stages, activity records and account ownership for a B2B equipment supplier.",Concrete task evidence in the resume.
+CV-023,JD-002,C3,demonstrated,EXPERIENCE,Produced Excel pivot summaries of open quotes and used VLOOKUP to reconcile product codes with the approved price list.,Concrete task evidence in the resume.
+CV-023,JD-002,C4,demonstrated,EXPERIENCE,"Drafted equipment quotations, followed up on missing purchase-order details and coordinated confirmed orders with warehouse staff.",Concrete task evidence in the resume.
+CV-024,JD-001,C1,not_evidenced,EXPERIENCE,"IT Support Technician | Harbour Vale Services
+2020-08 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-024,JD-001,C2,not_evidenced,EXPERIENCE,"Resolved workstation, printer and network access incidents and documented repeat fixes in the service desk.",No qualifying task evidence is stated; absence is not proof of inability.
+CV-024,JD-001,C3,not_evidenced,EXPERIENCE,Maintained a spreadsheet asset register and checked device serial numbers during office moves.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-024,JD-001,C4,not_evidenced,EXPERIENCE,Tested operating-system patches on spare laptops before rollout and escalated application defects to the software vendor.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-025,JD-001,C1,demonstrated,EXPERIENCE,"Software Developer | Cedar Quay Services
+2022-01 to 2026-08",Visible relevant duration: 56 calendar months.
+CV-025,JD-001,C2,demonstrated,EXPERIENCE,"Built Flask web-service endpoints for customer returns, refund approvals and repair tracking for an electronics reseller.",Concrete task evidence in the resume.
+CV-025,JD-001,C3,demonstrated,EXPERIENCE,"Designed MariaDB tables, wrote SQL joins for return histories and migrated legacy spreadsheet records with validation checks.",Concrete task evidence in the resume.
+CV-025,JD-001,C4,demonstrated,EXPERIENCE,Collaborated using Git branches and pull requests; added pytest checks for refund limits and duplicate return requests.,Concrete task evidence in the resume.
+CV-026,JD-001,C1,unclear,EXPERIENCE,"Backend Engineer | Juniper Vale Services
+Start date not stated to 2026-08",The role start date is not supplied; ask for dates before judging C1.
+CV-026,JD-001,C2,demonstrated,EXPERIENCE,"Implemented Python API endpoints for courier booking and cancellation, including input validation and duplicate request protection.",Concrete task evidence in the resume.
+CV-026,JD-001,C3,demonstrated,EXPERIENCE,Designed PostgreSQL shipment tables and SQL queries for daily job reconciliation.,Concrete task evidence in the resume.
+CV-026,JD-001,C4,demonstrated,EXPERIENCE,Worked with Git pull requests and added pytest regression tests for booking status changes.,Concrete task evidence in the resume.
+CV-027,JD-002,C1,demonstrated,EXPERIENCE,"Sales Administrator | Fern Grove Services
+2024-02 to 2026-08",Visible relevant duration: 31 calendar months.
+CV-027,JD-002,C2,demonstrated,EXPERIENCE,"Maintained Zoho CRM accounts, contact details and sales stages for a B2B office-services provider, correcting duplicated customer records.",Concrete task evidence in the resume.
+CV-027,JD-002,C3,demonstrated,EXPERIENCE,Used Excel XLOOKUP to join quote logs to CRM exports and pivot tables to report outstanding offers by account manager.,Concrete task evidence in the resume.
+CV-027,JD-002,C4,demonstrated,EXPERIENCE,"Prepared quotations from approved rates, sent clarification requests to customers and coordinated signed service requests with operations.",Concrete task evidence in the resume.
+CV-028,JD-003,C1,unclear,EXPERIENCE,"Accounts Assistant | Juniper Field Services
+Start date not stated to 2026-08",Duration cannot be established from the supplied dates.
+CV-028,JD-003,C2,demonstrated,EXPERIENCE,"Processed supplier bills and payment lists, raised customer invoices and allocated receipts for a small maintenance company.",Concrete task evidence in the resume.
+CV-028,JD-003,C3,demonstrated,EXPERIENCE,Completed monthly bank reconciliations and investigated unmatched deposits and unpresented payments.,Concrete task evidence in the resume.
+CV-028,JD-003,C4,demonstrated,EXPERIENCE,Used Xero for transaction entry and Excel lookup checks to review invoice references and outstanding balances.,Concrete task evidence in the resume.
+CV-029,JD-003,C1,demonstrated,EXPERIENCE,"Bookkeeping Assistant | Fern Bridge Services
+2022-06 to 2026-08",Visible relevant duration: 51 calendar months.
+CV-029,JD-003,C2,demonstrated,EXPERIENCE,"Maintained trade payables and receivables, entered vendor bills, issued customer statements and allocated receipts against unpaid invoices.",Concrete task evidence in the resume.
+CV-029,JD-003,C3,demonstrated,EXPERIENCE,Matched bank-statement lines to cash-book records each month and investigated unmatched charges and deposits.,Concrete task evidence in the resume.
+CV-029,JD-003,C4,demonstrated,EXPERIENCE,Posted daily records in MYOB and used Excel reconciliations and lookup formulas to check transaction references and ledger totals.,Concrete task evidence in the resume.
+CV-030,JD-001,C1,demonstrated,EXPERIENCE,"Integration Developer | Harbour Quay Services
+2024-09 to 2026-08",Visible relevant duration: 24 calendar months.
+CV-030,JD-001,C2,demonstrated,EXPERIENCE,Implemented Python REST endpoints to synchronize product details between an order portal and a supplier feed.,Concrete task evidence in the resume.
+CV-030,JD-001,C3,demonstrated,EXPERIENCE,Wrote SQL Server MERGE and SELECT queries and created relational staging tables to validate incoming supplier records.,Concrete task evidence in the resume.
+CV-030,JD-001,C4,demonstrated,EXPERIENCE,Used Git pull requests with the application team and automated regression checks with pytest before each weekly deployment.,Concrete task evidence in the resume.
+CV-031,JD-003,C1,explicitly_not_met,EXPERIENCE,"Accounts Intern | Lantern Bridge Services
+2026-03 to 2026-08",Visible relevant duration: 6 calendar months.
+CV-031,JD-003,C2,demonstrated,EXPERIENCE,"Entered supplier invoices, assisted with payment lists, issued customer invoices and matched receipts during a paid finance internship.",Concrete task evidence in the resume.
+CV-031,JD-003,C3,demonstrated,EXPERIENCE,Prepared monthly bank reconciliations and investigated unmatched items with the supervising accountant.,Concrete task evidence in the resume.
+CV-031,JD-003,C4,demonstrated,EXPERIENCE,Used Xero for transaction posting and Excel lookup formulas to check invoice references and supporting schedules.,Concrete task evidence in the resume.
+CV-032,JD-003,C1,demonstrated,EXPERIENCE,"Accounts Clerk | Maple Bridge Services
+2019-05 to 2024-04",Visible relevant duration: 60 calendar months.
+CV-032,JD-003,C2,demonstrated,EXPERIENCE,"Entered supplier invoices, prepared payment batches, raised sales invoices and allocated customer receipts for a catering supplier.",Concrete task evidence in the resume.
+CV-032,JD-003,C3,demonstrated,EXPERIENCE,"Completed monthly bank reconciliations, tracing unmatched deposits and correcting duplicate cash-book entries for review.",Concrete task evidence in the resume.
+CV-032,JD-003,C4,demonstrated,EXPERIENCE,Used Xero for transaction posting and Excel schedules to check ageing balances and outstanding bank items.,Concrete task evidence in the resume.
+CV-033,JD-001,C1,demonstrated,EXPERIENCE,"Full Stack Developer | Willow Quay Services
+2023-07 to 2026-08",Visible relevant duration: 38 calendar months.
+CV-033,JD-001,C2,demonstrated,EXPERIENCE,"Implemented NestJS application endpoints and pricing rules for a subscription service, including request validation and event retries.",Concrete task evidence in the resume.
+CV-033,JD-001,C3,demonstrated,EXPERIENCE,"Added PostgreSQL migration scripts and relational constraints so customer plans, invoices and credit notes stayed consistent.",Concrete task evidence in the resume.
+CV-033,JD-001,C4,demonstrated,EXPERIENCE,Used peer-reviewed Git commits and Jest unit tests plus end-to-end tests for subscription renewal and failed payments.,Concrete task evidence in the resume.
+CV-034,JD-002,C1,explicitly_not_met,EXPERIENCE,"B2B Sales Support Intern | Lantern Grove Services
+2026-03 to 2026-08",Visible relevant duration: 6 calendar months.
+CV-034,JD-002,C2,demonstrated,EXPERIENCE,Updated HubSpot contacts and deal stages for a B2B cleaning-services team during a paid internship.,Concrete task evidence in the resume.
+CV-034,JD-002,C3,demonstrated,EXPERIENCE,Prepared Excel pivot tables showing outstanding quotations and used lookup formulas to check approved customer rates.,Concrete task evidence in the resume.
+CV-034,JD-002,C4,demonstrated,EXPERIENCE,"Drafted cleaning-service quotations for supervisor approval, followed up on site details and helped prepare the operations handover.",Concrete task evidence in the resume.
+CV-035,JD-002,C1,not_evidenced,EXPERIENCE,"Customer Service Agent | Willow Dock Services
+2020-07 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-035,JD-002,C2,demonstrated,EXPERIENCE,Updated customer contact details and interaction records in a CRM while resolving consumer delivery enquiries.,Concrete task evidence in the resume.
+CV-035,JD-002,C3,not_evidenced,EXPERIENCE,Read daily service totals from a dashboard and escalated cases according to a queue checklist.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-035,JD-002,C4,explicitly_not_met,EXPERIENCE,Answered post-purchase questions from individual consumers; B2B sales quotations and order handovers were not part of my role.,The resume explicitly limits this experience.
+CV-036,JD-003,C1,demonstrated,EXPERIENCE,"Finance Administrator | Cobalt Bridge Services
+2021-09 to 2026-08",Visible relevant duration: 60 calendar months.
+CV-036,JD-003,C2,demonstrated,EXPERIENCE,"Recorded supplier bills, prepared payment listings, raised customer invoices and matched incoming receipts to the accounts receivable ledger.",Concrete task evidence in the resume.
+CV-036,JD-003,C3,demonstrated,EXPERIENCE,Reconciled monthly bank statements to cash-book entries and followed up on duplicate postings and timing differences.,Concrete task evidence in the resume.
+CV-036,JD-003,C4,demonstrated,EXPERIENCE,Used QuickBooks for ledger entries and Excel pivot tables and lookups to check invoice status and outstanding balances.,Concrete task evidence in the resume.
+CV-037,JD-003,C1,demonstrated,EXPERIENCE,"Bookkeeper | Cobalt Field Services
+2020-11 to 2026-08",Visible relevant duration: 70 calendar months.
+CV-037,JD-003,C2,demonstrated,EXPERIENCE,"Recorded supplier invoices and payments, prepared customer invoices and matched receipts using a spreadsheet ledger.",Concrete task evidence in the resume.
+CV-037,JD-003,C3,demonstrated,EXPERIENCE,Reconciled the monthly bank statement to the spreadsheet cash book and investigated unmatched deposits and charges.,Concrete task evidence in the resume.
+CV-037,JD-003,C4,explicitly_not_met,EXPERIENCE,"Maintained all bookkeeping in Excel with lookup checks. I have not used accounting software such as Xero, MYOB or QuickBooks.",The resume explicitly limits this experience.
+CV-038,JD-002,C1,unclear,PROFILE + EXPERIENCE,Sales operations specialist with three years of B2B sales administration experience. My only employment role is listed below. Interested in accurate reports and dependable customer handovers.,The summary claims three years; the only dated role covers eight months.
+CV-038,JD-002,C2,demonstrated,EXPERIENCE,Maintained Salesforce accounts and opportunity stages for a B2B office-relocation service.,Concrete task evidence in the resume.
+CV-038,JD-002,C3,demonstrated,EXPERIENCE,Produced Excel pivot reports and VLOOKUP checks linking open quotations to approved service rates.,Concrete task evidence in the resume.
+CV-038,JD-002,C4,demonstrated,EXPERIENCE,"Prepared relocation quotations, coordinated customer access details and transferred approved work to project scheduling.",Concrete task evidence in the resume.
+CV-039,JD-003,C1,demonstrated,EXPERIENCE,"Accounts Payable Assistant | Quartz Bridge Services
+2022-04 to 2026-08",Visible relevant duration: 53 calendar months.
+CV-039,JD-003,C2,explicitly_not_met,EXPERIENCE,Processed supplier invoices and payment batches. Customer invoicing and receipt allocation were handled by a separate AR team; I have no AR duties.,The resume explicitly limits this experience.
+CV-039,JD-003,C3,demonstrated,EXPERIENCE,Performed bank reconciliations and investigated supplier-payment timing differences and unmatched bank charges.,Concrete task evidence in the resume.
+CV-039,JD-003,C4,demonstrated,EXPERIENCE,Used MYOB to record supplier bills and Excel lookups to reconcile payment listings and invoice references.,Concrete task evidence in the resume.
+CV-040,JD-003,C1,demonstrated,EXPERIENCE,"Payroll Administrator | Maple Field Services
+2021-02 to 2026-08",Visible relevant duration: 67 calendar months.
+CV-040,JD-003,C2,explicitly_not_met,EXPERIENCE,"Maintained payroll changes and payment records. Supplier invoicing, customer billing and AP/AR ledgers were outside my responsibilities.",The resume explicitly limits this experience.
+CV-040,JD-003,C3,demonstrated,EXPERIENCE,Reconciled the payroll bank account against posted payroll payments and investigated rejected transfers and timing differences.,Concrete task evidence in the resume.
+CV-040,JD-003,C4,demonstrated,EXPERIENCE,Posted payroll journals in Sage and used Excel lookups to reconcile payment instructions and approved payroll schedules.,Concrete task evidence in the resume.
+CV-041,JD-001,C1,demonstrated,EXPERIENCE,"Frontend Developer | Cobalt Vale Services
+2021-09 to 2026-08",Visible relevant duration: 60 calendar months.
+CV-041,JD-001,C2,explicitly_not_met,EXPERIENCE,Built React dashboards that called APIs supplied by another team. Backend service implementation was outside my role.,The resume explicitly limits this experience.
+CV-041,JD-001,C3,demonstrated,EXPERIENCE,Wrote SQL queries against a read-only PostgreSQL reporting database to verify customer counts displayed in the interface.,Concrete task evidence in the resume.
+CV-041,JD-001,C4,demonstrated,EXPERIENCE,Collaborated through Git reviews and wrote Jest component tests for form validation and dashboard filtering.,Concrete task evidence in the resume.
+CV-042,JD-001,C1,demonstrated,EXPERIENCE,"Application Engineer | Cobalt Quay Services
+2021-07 to 2026-08",Visible relevant duration: 62 calendar months.
+CV-042,JD-001,C2,demonstrated,EXPERIENCE,"Implemented TypeScript REST services for appointment booking, capacity limits and cancellation rules for a small service business.",Concrete task evidence in the resume.
+CV-042,JD-001,C3,demonstrated,EXPERIENCE,"Created MySQL indexes and schema migrations, and rewrote SQL queries to remove repeated database requests in the booking calendar.",Concrete task evidence in the resume.
+CV-042,JD-001,C4,demonstrated,EXPERIENCE,"Reviewed Git merge requests and maintained Jest tests covering double booking, invalid time windows and customer cancellation flows.",Concrete task evidence in the resume.
+CV-043,JD-002,C1,not_evidenced,EXPERIENCE,"Retail Customer Advisor | Fern Dock Services
+2021-08 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-043,JD-002,C2,demonstrated,EXPERIENCE,Maintained customer records and follow-up activities in a retail CRM for individual shoppers at a furniture showroom.,Concrete task evidence in the resume.
+CV-043,JD-002,C3,demonstrated,EXPERIENCE,Used Excel pivot tables and lookup formulas to review consumer orders and identify missing delivery confirmations.,Concrete task evidence in the resume.
+CV-043,JD-002,C4,explicitly_not_met,EXPERIENCE,Prepared consumer quotations and coordinated household deliveries. I have not supported business-to-business accounts or quotations.,The resume explicitly limits this experience.
+CV-044,JD-003,C1,unclear,PROFILE + EXPERIENCE,Bookkeeping officer with four years of accounts support experience. My only employment role is listed below. I focus on accurate source records and timely follow-up on missing information.,The summary claims four years; the only dated role covers seven months.
+CV-044,JD-003,C2,demonstrated,EXPERIENCE,"Recorded supplier invoices and payment batches, issued customer bills and allocated receipts to the debtor ledger.",Concrete task evidence in the resume.
+CV-044,JD-003,C3,demonstrated,EXPERIENCE,Prepared bank reconciliations and investigated duplicated transfers and unmatched charges with the accountant.,Concrete task evidence in the resume.
+CV-044,JD-003,C4,demonstrated,EXPERIENCE,Posted transactions in QuickBooks and used Excel lookup formulas and ageing schedules to review ledger details.,Concrete task evidence in the resume.
+CV-045,JD-003,C1,explicitly_not_met,EXPERIENCE,"Accounts Receivable Trainee | Fern Field Services
+2026-02 to 2026-08",Visible relevant duration: 7 calendar months.
+CV-045,JD-003,C2,explicitly_not_met,EXPERIENCE,Raised customer invoices and allocated receipts during a paid traineeship. I have not processed supplier invoices or payables.,The resume explicitly limits this experience.
+CV-045,JD-003,C3,demonstrated,EXPERIENCE,Prepared bank reconciliations and followed up on unmatched customer receipts with the finance supervisor.,Concrete task evidence in the resume.
+CV-045,JD-003,C4,demonstrated,EXPERIENCE,Used Xero to post approved receipts and Excel lookups to match payment references to customer invoice numbers.,Concrete task evidence in the resume.
+CV-046,JD-001,C1,demonstrated,EXPERIENCE,"Software Developer | Quartz Vale Services
+2023-03 to 2026-08",Visible relevant duration: 42 calendar months.
+CV-046,JD-001,C2,demonstrated,EXPERIENCE,Implemented Django service endpoints for warranty claims and case assignment with input and permission checks.,Concrete task evidence in the resume.
+CV-046,JD-001,C3,unclear,EXPERIENCE,Worked on a PostgreSQL-backed application alongside a shared data team responsible for database changes and reporting support.,The scope of personal contribution needs clarification.
+CV-046,JD-001,C4,demonstrated,EXPERIENCE,Used Git merge requests and wrote pytest tests for claim validation and assignment rules.,Concrete task evidence in the resume.
+CV-047,JD-001,C1,demonstrated,EXPERIENCE,"Software Developer | Amber Quay Services
+2023-01 to 2026-08",Visible relevant duration: 44 calendar months.
+CV-047,JD-001,C2,demonstrated,EXPERIENCE,"Built Python HTTP endpoints for stock reservations and order amendments, including validation and retry-safe request handling for a wholesale distributor.",Concrete task evidence in the resume.
+CV-047,JD-001,C3,demonstrated,EXPERIENCE,Designed PostgreSQL order tables and SQL reconciliation queries that exposed mismatches between warehouse movements and billed quantities.,Concrete task evidence in the resume.
+CV-047,JD-001,C4,demonstrated,EXPERIENCE,Used Git pull requests with two developers and added pytest unit and API integration tests to the release workflow.,Concrete task evidence in the resume.
+CV-048,JD-003,C1,demonstrated,EXPERIENCE,"Accounts Support Officer | Cedar Bridge Services
+2021-04 to 2026-08",Visible relevant duration: 65 calendar months.
+CV-048,JD-003,C2,demonstrated,EXPERIENCE,"Processed supplier invoices and payment requests, issued customer invoices and tracked receipts against outstanding debtor balances.",Concrete task evidence in the resume.
+CV-048,JD-003,C3,demonstrated,EXPERIENCE,"Reconciled bank statements each month and investigated charges, unmatched transfers and receipts posted to the wrong account.",Concrete task evidence in the resume.
+CV-048,JD-003,C4,demonstrated,EXPERIENCE,Used AutoCount for bookkeeping and Excel lookup formulas to reconcile invoice logs with the ledger and ageing reports.,Concrete task evidence in the resume.
+CV-049,JD-001,C1,explicitly_not_met,EXPERIENCE,"Junior Software Developer | Lantern Quay Services
+2025-09 to 2026-08",Visible relevant duration: 12 calendar months.
+CV-049,JD-001,C2,demonstrated,EXPERIENCE,Implemented Python API endpoints for stock enquiries and low-stock alerts under the guidance of a senior developer.,Concrete task evidence in the resume.
+CV-049,JD-001,C3,demonstrated,EXPERIENCE,Wrote PostgreSQL joins and a migration for supplier lead-time fields used by the purchasing dashboard.,Concrete task evidence in the resume.
+CV-049,JD-001,C4,demonstrated,EXPERIENCE,"Submitted Git pull requests and added pytest tests for empty orders, missing supplier codes and duplicate notifications.",Concrete task evidence in the resume.
+CV-050,JD-002,C1,demonstrated,EXPERIENCE,"B2B Account Coordinator | Juniper Grove Services
+2021-11 to 2026-08",Visible relevant duration: 58 calendar months.
+CV-050,JD-002,C2,demonstrated,EXPERIENCE,"Maintained Salesforce account, contact and opportunity records for a workplace furniture supplier, including quote revisions.",Concrete task evidence in the resume.
+CV-050,JD-002,C3,demonstrated,EXPERIENCE,Used Excel pivot tables and VLOOKUP to report weekly pipeline movement and reconcile quoted products with approved catalogue codes.,Concrete task evidence in the resume.
+CV-050,JD-002,C4,demonstrated,EXPERIENCE,"Prepared furniture quotations, followed up on layout approvals and coordinated order handover with the installation scheduler.",Concrete task evidence in the resume.
+CV-051,JD-002,C1,not_evidenced,EXPERIENCE,"Social Media Assistant | Cedar Dock Services
+2022-02 to 2026-08",Visible relevant duration: 0 calendar months.
+CV-051,JD-002,C2,explicitly_not_met,EXPERIENCE,Scheduled social media posts and updated a content calendar for a consumer lifestyle brand.,The resume explicitly limits this experience.
+CV-051,JD-002,C3,not_evidenced,EXPERIENCE,Copied follower and engagement totals from platform dashboards into slides; no spreadsheet sales reporting is listed.,No qualifying task evidence is stated; absence is not proof of inability.
+CV-051,JD-002,C4,explicitly_not_met,EXPERIENCE,Watched introductory videos on HubSpot and Salesforce. I have not used a CRM in a work project or prepared B2B quotations.,The resume explicitly limits this experience.
+CV-052,JD-003,C1,demonstrated,EXPERIENCE,"Accounts Assistant | Amber Bridge Services
+2023-03 to 2026-08",Visible relevant duration: 42 calendar months.
+CV-052,JD-003,C2,demonstrated,EXPERIENCE,"Processed supplier invoices and payment batches, issued customer invoices and allocated receipts to open balances for a small distributor.",Concrete task evidence in the resume.
+CV-052,JD-003,C3,demonstrated,EXPERIENCE,"Performed monthly bank reconciliations and investigated unpresented payments, bank charges and receipts without invoice references.",Concrete task evidence in the resume.
+CV-052,JD-003,C4,demonstrated,EXPERIENCE,Posted transactions in Xero and used Excel lookup checks and ageing schedules to review supplier and customer balances.,Concrete task evidence in the resume.
+CV-053,JD-003,C1,demonstrated,EXPERIENCE,"Junior Accounts Executive | Willow Bridge Services
+2023-08 to 2026-08",Visible relevant duration: 37 calendar months.
+CV-053,JD-003,C2,demonstrated,EXPERIENCE,"Entered supplier bills, prepared proposed payments, raised customer invoices and applied incoming receipts to the receivables ledger.",Concrete task evidence in the resume.
+CV-053,JD-003,C3,demonstrated,EXPERIENCE,Performed bank reconciliations and investigated uncleared payments and unexplained differences before accountant sign-off.,Concrete task evidence in the resume.
+CV-053,JD-003,C4,demonstrated,EXPERIENCE,Used Xero and Excel pivot tables to reconcile transaction listings and prepare account schedules for month-end review.,Concrete task evidence in the resume.
+CV-054,JD-002,C1,demonstrated,EXPERIENCE,"B2B Sales Support Executive | Maple Grove Services
+2020-09 to 2024-08",Visible relevant duration: 48 calendar months.
+CV-054,JD-002,C2,demonstrated,EXPERIENCE,"Maintained Pipedrive company records and opportunity stages for a business printing service, including next-action dates.",Concrete task evidence in the resume.
+CV-054,JD-002,C3,demonstrated,EXPERIENCE,Created Excel pivot reports of quote conversion and used lookup formulas to identify orders without matching quotations.,Concrete task evidence in the resume.
+CV-054,JD-002,C4,demonstrated,EXPERIENCE,"Prepared print-service quotes, coordinated customer artwork confirmation and transferred approved jobs to production planners.",Concrete task evidence in the resume.
+CV-055,JD-001,C1,demonstrated,EXPERIENCE,"Internal Tools Developer | Amber Vale Services
+2023-02 to 2026-08",Visible relevant duration: 43 calendar months.
+CV-055,JD-001,C2,demonstrated,EXPERIENCE,"Built Flask APIs for equipment check-out and maintenance booking, including rules to prevent conflicting reservations.",Concrete task evidence in the resume.
+CV-055,JD-001,C3,demonstrated,EXPERIENCE,"Maintained MySQL asset and booking tables, SQL joins and migration scripts for additional maintenance fields.",Concrete task evidence in the resume.
+CV-055,JD-001,C4,explicitly_not_met,EXPERIENCE,Used Git to share changes with one colleague. Testing consisted of a manual spreadsheet checklist; I have not written automated tests.,The resume explicitly limits this experience.
+CV-056,JD-002,C1,demonstrated,EXPERIENCE,"Sales Operations Assistant | Harbour Grove Services
+2025-09 to 2026-08",Visible relevant duration: 12 calendar months.
+CV-056,JD-002,C2,demonstrated,EXPERIENCE,Updated Zoho CRM contact and opportunity records for a B2B packaging supplier and checked that each open deal had a next action.,Concrete task evidence in the resume.
+CV-056,JD-002,C3,demonstrated,EXPERIENCE,Created Excel pivot summaries of quotation age and used lookup formulas to match approved discounts to customer accounts.,Concrete task evidence in the resume.
+CV-056,JD-002,C4,demonstrated,EXPERIENCE,"Prepared packaging quotations from the product rate sheet, followed up on customer quantities and handed purchase orders to fulfilment.",Concrete task evidence in the resume.
+CV-057,JD-001,C1,demonstrated,EXPERIENCE,"Contract Software Developer | Maple Quay Services
+2021-03 to 2024-02",Visible relevant duration: 36 calendar months.
+CV-057,JD-001,C2,demonstrated,EXPERIENCE,Delivered Node.js HTTP endpoints for dispatch allocation and proof-of-delivery updates under paid contracts to a logistics SME.,Concrete task evidence in the resume.
+CV-057,JD-001,C3,demonstrated,EXPERIENCE,Modelled dispatch jobs and driver assignments in SQLite and wrote SQL extracts used for daily delivery reconciliation.,Concrete task evidence in the resume.
+CV-057,JD-001,C4,demonstrated,EXPERIENCE,Submitted changes through the client Git repository with code review and maintained Mocha tests for dispatch status transitions.,Concrete task evidence in the resume.
+CV-058,JD-002,C1,demonstrated,EXPERIENCE,"Revenue Operations Assistant | Willow Grove Services
+2023-09 to 2026-08",Visible relevant duration: 36 calendar months.
+CV-058,JD-002,C2,demonstrated,EXPERIENCE,Maintained customer and opportunity records in Microsoft Dynamics CRM for a B2B maintenance business and checked the stage history.,Concrete task evidence in the resume.
+CV-058,JD-002,C3,demonstrated,EXPERIENCE,Prepared weekly Excel pivot reports and XLOOKUP reconciliations between sales opportunities and invoiced maintenance plans.,Concrete task evidence in the resume.
+CV-058,JD-002,C4,demonstrated,EXPERIENCE,Drafted maintenance-plan quotations and coordinated customer follow-up and technician handover after contract approval.,Concrete task evidence in the resume.
+CV-059,JD-003,C1,demonstrated,EXPERIENCE,"Billing and Payments Clerk | Amber Field Services
+2023-01 to 2026-08",Visible relevant duration: 44 calendar months.
+CV-059,JD-003,C2,demonstrated,EXPERIENCE,"Entered supplier invoices and payment records, raised customer bills and allocated receipts to outstanding invoices.",Concrete task evidence in the resume.
+CV-059,JD-003,C3,explicitly_not_met,EXPERIENCE,Filed bank statements for the accountant. I did not perform bank reconciliations or investigate differences.,The resume explicitly limits this experience.
+CV-059,JD-003,C4,demonstrated,EXPERIENCE,"Used QuickBooks for ledger entries and Excel schedules to check invoice dates, references and unpaid balances.",Concrete task evidence in the resume.
+CV-060,JD-002,C1,demonstrated,EXPERIENCE,"Commercial Assistant | Quartz Dock Services
+2023-05 to 2026-08",Visible relevant duration: 40 calendar months.
+CV-060,JD-002,C2,demonstrated,EXPERIENCE,Maintained HubSpot company records and deal-stage updates for a B2B audiovisual services provider.,Concrete task evidence in the resume.
+CV-060,JD-002,C3,demonstrated,EXPERIENCE,Prepared Excel pivot tables and lookup checks for weekly sales activity and quotation-age reports.,Concrete task evidence in the resume.
+CV-060,JD-002,C4,unclear,EXPERIENCE,"Supported the quotation desk, joined customer handover meetings and helped colleagues respond to commercial requests.",The scope of personal contribution needs clarification.

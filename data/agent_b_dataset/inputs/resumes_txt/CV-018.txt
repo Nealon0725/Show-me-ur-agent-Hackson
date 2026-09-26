@@ -1,0 +1,27 @@
+Dev Menon
+Application Developer
+cv-018@example.com | Singapore
+
+PROFILE
+Application Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+TypeScript; Node.js; MongoDB; Git; Jest
+
+EXPERIENCE
+Application Developer | Quartz Quay Services
+2022-11 to 2026-08
+- Developed TypeScript API routes and workflow rules for customer service requests with validation and access control.
+- Stored application records in MongoDB collections and wrote document aggregation pipelines. I have not used a relational SQL database in project work.
+- Used Git branches and reviews and maintained Jest tests for request routing, permissions and failed writes.
+
+SELECTED PROJECT
+Support dashboard: reduced repeated manual data copying by exporting a daily request summary to a spreadsheet.
+
+EDUCATION
+BSc in Information Technology, Harbourview Institute, 2022
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

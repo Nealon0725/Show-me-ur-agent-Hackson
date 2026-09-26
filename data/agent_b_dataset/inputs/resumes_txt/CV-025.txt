@@ -1,0 +1,27 @@
+Jordan Lee
+Software Developer
+cv-025@example.com | Singapore
+
+PROFILE
+Software Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; Flask; MariaDB; Git; pytest
+
+EXPERIENCE
+Software Developer | Cedar Quay Services
+2022-01 to 2026-08
+- Built Flask web-service endpoints for customer returns, refund approvals and repair tracking for an electronics reseller.
+- Designed MariaDB tables, wrote SQL joins for return histories and migrated legacy spreadsheet records with validation checks.
+- Collaborated using Git branches and pull requests; added pytest checks for refund limits and duplicate return requests.
+
+SELECTED PROJECT
+Self-directed learning: produced a troubleshooting guide after tracing inconsistent refund results to stale imported records.
+
+EDUCATION
+Certificate in Web Development, fictional Open Harbour Learning Centre, 2021; no university degree
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

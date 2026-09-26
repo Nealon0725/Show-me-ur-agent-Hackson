@@ -1,0 +1,27 @@
+Jamie Tan
+Software Developer
+cv-047@example.com | Singapore
+
+PROFILE
+Software Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; FastAPI; PostgreSQL; Git; pytest; React
+
+EXPERIENCE
+Software Developer | Amber Quay Services
+2023-01 to 2026-08
+- Built Python HTTP endpoints for stock reservations and order amendments, including validation and retry-safe request handling for a wholesale distributor.
+- Designed PostgreSQL order tables and SQL reconciliation queries that exposed mismatches between warehouse movements and billed quantities.
+- Used Git pull requests with two developers and added pytest unit and API integration tests to the release workflow.
+
+SELECTED PROJECT
+Supplier portal: added a React delivery-status view and a CSV import validation report used by six operations staff.
+
+EDUCATION
+Diploma in Software Engineering, Meridian Applied Institute, 2022
+
+CERTIFICATIONS
+Cloud Foundations Certificate, fictional Cedar Learning Academy, issued 2025; no expiry stated.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

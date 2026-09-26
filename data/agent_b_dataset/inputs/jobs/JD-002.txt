@@ -1,0 +1,27 @@
+Sales Operations Executive - B2B Services
+Willow Bridge Business Services (fictional SME)
+Synthetic job description for a hackathon prototype. Not an actual vacancy.
+
+Maintain a reliable B2B sales pipeline, prepare weekly reports and coordinate accurate quotes and handovers.
+
+RESPONSIBILITIES
+- Keep opportunity stages and customer records current.
+- Produce weekly pipeline and sales reports.
+- Coordinate quotations, follow-ups and delivery handovers.
+
+REQUIRED EVIDENCE
+C1: At least 12 distinct calendar months supporting B2B sales operations or B2B sales administration. Paid internships count.
+C2: Evidence of maintaining CRM customer, opportunity or pipeline records.
+C3: Evidence of spreadsheet sales reporting using pivot tables or lookup functions.
+C4: Evidence of preparing B2B quotations and coordinating customer follow-up or order handover.
+
+EDUCATION
+Business-related qualification or equivalent practical experience. A degree is not mandatory.
+
+PREFERRED (NOT REQUIRED)
+- HubSpot, Salesforce or Zoho experience; equivalent CRMs are acceptable
+- Process documentation
+- Relevant certification, if stated and current
+
+Interpret missing information as not evidenced, not proof of inability. Ask for clarification when the resume is ambiguous or internally inconsistent.
+Do not infer eligibility, age, nationality, gender or other personal characteristics from a name, education dates or location.

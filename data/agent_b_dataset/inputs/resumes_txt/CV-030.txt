@@ -1,0 +1,27 @@
+Taylor Koh
+Integration Developer
+cv-030@example.com | Singapore
+
+PROFILE
+Integration Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; REST; SQL Server; Git; pytest
+
+EXPERIENCE
+Integration Developer | Harbour Quay Services
+2024-09 to 2026-08
+- Implemented Python REST endpoints to synchronize product details between an order portal and a supplier feed.
+- Wrote SQL Server MERGE and SELECT queries and created relational staging tables to validate incoming supplier records.
+- Used Git pull requests with the application team and automated regression checks with pytest before each weekly deployment.
+
+SELECTED PROJECT
+Import monitoring: added an exception summary that let the purchasing team correct invalid product codes without developer help.
+
+EDUCATION
+Diploma in Business IT, Eastbank Applied College, 2024
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

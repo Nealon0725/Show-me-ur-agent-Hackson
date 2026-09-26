@@ -1,0 +1,31 @@
+{
+  "candidate_id": "CV-XXX",
+  "job_id": "JD-00X",
+  "criteria": [
+    {
+      "criterion_id": "C1",
+      "status": "unclear",
+      "evidence_quotes": [],
+      "reason": "Placeholder: replace with a reason grounded in this resume."
+    },
+    {
+      "criterion_id": "C2",
+      "status": "unclear",
+      "evidence_quotes": [],
+      "reason": "Placeholder: replace with a reason grounded in this resume."
+    },
+    {
+      "criterion_id": "C3",
+      "status": "unclear",
+      "evidence_quotes": [],
+      "reason": "Placeholder: replace with a reason grounded in this resume."
+    },
+    {
+      "criterion_id": "C4",
+      "status": "unclear",
+      "evidence_quotes": [],
+      "reason": "Placeholder: replace with a reason grounded in this resume."
+    }
+  ],
+  "predicted_label": "needs_clarification"
+}

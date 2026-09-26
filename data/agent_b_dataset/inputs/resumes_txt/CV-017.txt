@@ -1,0 +1,27 @@
+Finley Ho
+Business Systems Analyst
+cv-017@example.com | Singapore
+
+PROFILE
+Business Systems Analyst focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+SQL; Git; Python basics; Process mapping
+
+EXPERIENCE
+Business Systems Analyst | Maple Vale Services
+2020-01 to 2026-08
+- Collected requirements and tested an external vendor portal. Python study is limited to introductory exercises; I did not implement backend APIs.
+- Wrote SQL joins against the reporting database to reconcile customer orders with billed service usage.
+- Used Git pull requests and wrote automated pytest acceptance tests for vendor-delivered workflows, while the vendor owned backend implementation.
+
+SELECTED PROJECT
+Requirements workshop: mapped approval steps and converted operations feedback into acceptance examples for the vendor.
+
+EDUCATION
+BSc in Business Information Systems, Westport College, 2019
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

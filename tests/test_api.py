@@ -26,6 +26,10 @@ class APITests(unittest.TestCase):
                     self.assertIn('Recruitment Assistant', response.read().decode())
                 with urlopen(base + '/api/demo') as response:
                     demo = json.load(response)
+                with urlopen(base + '/api/dataset') as response:
+                    dataset = json.load(response)
+                self.assertEqual(dataset['count'], 60)
+                self.assertEqual(len(dataset['resumes']), 60)
                 run = post('/api/runs', demo)
                 path = '/api/runs/' + run['id']
                 run = post(path + '/confirm', {})

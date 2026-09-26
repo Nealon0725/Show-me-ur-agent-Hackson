@@ -1,0 +1,27 @@
+Nico Wong
+Frontend Developer
+cv-041@example.com | Singapore
+
+PROFILE
+Frontend Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+React; TypeScript; SQL; Git; Jest
+
+EXPERIENCE
+Frontend Developer | Cobalt Vale Services
+2021-09 to 2026-08
+- Built React dashboards that called APIs supplied by another team. Backend service implementation was outside my role.
+- Wrote SQL queries against a read-only PostgreSQL reporting database to verify customer counts displayed in the interface.
+- Collaborated through Git reviews and wrote Jest component tests for form validation and dashboard filtering.
+
+SELECTED PROJECT
+Design-system project: standardised accessible form components and documented error states for the product team.
+
+EDUCATION
+Diploma in Interactive Media, Seabrook Polytechnic, 2021
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

@@ -11,7 +11,7 @@
 <p>从招聘需求到证据整理、补充信息与人工决策。</p>
 <p class="muted notice">本地演示 · JD 使用有限英文规则，简历支持规则或已配置的模型 · 不发送邮件。分数仅代表技能证据覆盖率，不代表录用概率。经验要求单独评估；薪资、学历和工作资格由招聘者审核。</p>
 <div class="card"><h2>1. 输入职位与简历</h2>
-<button id="demo" class="secondary">载入示例</button>
+<button id="demo" class="secondary">载入示例</button><button id="dataset" class="secondary">载入60份测试简历</button>
 <div class="grid"><div><label for="jd">Job description</label><textarea id="jd" placeholder="Accounts Executive&#10;Required: Excel, Xero&#10;GST preferred"></textarea></div>
 <div><label for="resumes">Resumes（多份之间用单独一行 --- 分隔）</label><textarea id="resumes"></textarea></div></div>
 <button id="start">解析 JD，创建评估</button></div>
@@ -24,6 +24,7 @@ async function guard(fn){if(busy)return;busy=true;document.querySelectorAll('but
 function button(label,fn){const b=el('button',label);b.onclick=()=>guard(fn);return b}
 async function update(op,payload={}){state=await api('/api/runs/'+state.id+'/'+op,payload);render()}
 document.querySelector('#demo').onclick=()=>guard(async()=>{const d=await api('/api/demo');document.querySelector('#jd').value=d.jd;document.querySelector('#resumes').value=d.resumes.join('\n---\n')});
+document.querySelector('#dataset').onclick=()=>guard(async()=>{const d=await api('/api/dataset');const job=d.jobs.find(j=>j.job_id==='JD-001')||d.jobs[0];document.querySelector('#jd').value=job.title+'\n'+job.purpose+'\n'+job.criteria.map(c=>c[1]).join('\n');document.querySelector('#resumes').value=d.resumes.map(r=>r.resume_text).join('\n---\n')});
 document.querySelector('#start').onclick=()=>guard(async()=>{state=await api('/api/runs',{jd:document.querySelector('#jd').value,resumes:document.querySelector('#resumes').value.split(/^\s*---\s*$/m).map(s=>s.trim()).filter(Boolean)});localStorage.setItem('recruitmentRun',state.id);render()});
 function render(){const root=document.querySelector('#run');root.replaceChildren();const job=el('section',undefined,'card');job.append(el('h2','2. 确认招聘标准'),el('p',state.job.role));job.append(el('p','已识别标准：'+state.job.criteria.map(c=>(c.description||c.label)+(c.scored===false?'（单独评估，不计入技能分）':c.required?'（必需，权重 2）':'（优先，权重 1）')).join('、')));if(state.job.human_review_items)job.append(el('p','人工核实：'+state.job.human_review_items.map(i=>i.label).join('、'),'muted'));job.append(el('p','请在筛选前确认标准。如有遗漏或分类错误，请修改上方 JD 后重新创建评估。姓名、年龄、性别、国籍、照片不作为评分维度。','muted'));if(!state.criteria_confirmed)job.append(button('确认以上标准，开始评估',()=>update('confirm')));root.append(job);if(!state.criteria_confirmed)return;
 for(const c of [...state.candidates].sort((a,b)=>(a.evaluation.rank??999)-(b.evaluation.rank??999))){const box=el('section',undefined,'card');box.append(el('h2',c.id),el('span',({SHORTLIST:'建议入围 · 待人工审核',REQUEST_INFO:'待补充信息',LOW_MATCH:'必需项不满足 · 待人工审核',HUMAN_REVIEW:'需人工审核',COMPLETE:'已记录人工决定'})[c.action]||c.action,'tag'));box.append(el('p',(c.evaluation.documented_score??c.evaluation.score??'—')+' / 100','score'),el('p','已有证据覆盖率 · 可能覆盖率 '+(c.evaluation.possible_score??'—')+'% · 证据完整度 '+(c.evaluation.evidence_completeness??'—')+'%','muted'),el('p','排名 '+(c.evaluation.rank??'—')+' · '+(c.evaluation.rank_status==='provisional'?'暂定，补充信息后可能变化':'当前证据排序，并非录用结果')+' · '+c.evaluation.missing_information.length+' 项待澄清','muted'),el('p','评估方式：'+c.evaluation.parser,'muted'));

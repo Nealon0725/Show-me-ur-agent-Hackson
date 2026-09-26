@@ -1,0 +1,27 @@
+Software Developer - SME Workflow Applications
+Cedar Quay Systems (fictional SME)
+Synthetic job description for a hackathon prototype. Not an actual vacancy.
+
+Build and maintain order, inventory and customer workflow applications for small business clients in Singapore.
+
+RESPONSIBILITIES
+- Implement backend features and data integrations.
+- Maintain database changes, tests and code reviews.
+- Work with SME operations staff to clarify requirements.
+
+REQUIRED EVIDENCE
+C1: At least 24 distinct calendar months of commercial software development. Paid contracts and internships count; personal projects do not.
+C2: Evidence of implementing backend business logic and HTTP APIs in Python or JavaScript/TypeScript.
+C3: Evidence of SQL queries, relational data modelling or database migrations in a delivered application.
+C4: Evidence of both Git-based collaboration and automated software tests.
+
+EDUCATION
+Relevant qualification or equivalent practical experience. A degree is not mandatory.
+
+PREFERRED (NOT REQUIRED)
+- React interface development
+- Cloud deployment or CI/CD
+- Relevant certification, if stated and current
+
+Interpret missing information as not evidenced, not proof of inability. Ask for clarification when the resume is ambiguous or internally inconsistent.
+Do not infer eligibility, age, nationality, gender or other personal characteristics from a name, education dates or location.

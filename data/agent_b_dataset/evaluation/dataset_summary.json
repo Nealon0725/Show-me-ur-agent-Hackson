@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "generated_on": "2026-09-12",
+  "as_of_date": "2026-08-31",
+  "unique_candidates": 60,
+  "job_counts": {
+    "JD-001": 20,
+    "JD-003": 20,
+    "JD-002": 20
+  },
+  "labels": {
+    "evidence_complete": 24,
+    "evidence_limited": 9,
+    "evidence_partial": 18,
+    "needs_clarification": 9
+  },
+  "splits": {
+    "holdout": 18,
+    "development": 36,
+    "demo": 6
+  },
+  "pdf_types": {
+    "two_column_pdf": 18,
+    "single_column_pdf": 36,
+    "image_only_pdf": 6
+  },
+  "qualification": "All reference labels are AI-authored examples requiring team review, not validated hiring judgments."
+}

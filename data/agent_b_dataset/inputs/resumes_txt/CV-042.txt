@@ -1,0 +1,27 @@
+Alex Lim
+Application Engineer
+cv-042@example.com | Singapore
+
+PROFILE
+Application Engineer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+TypeScript; Node.js; Express; MySQL; Git; Jest
+
+EXPERIENCE
+Application Engineer | Cobalt Quay Services
+2021-07 to 2026-08
+- Implemented TypeScript REST services for appointment booking, capacity limits and cancellation rules for a small service business.
+- Created MySQL indexes and schema migrations, and rewrote SQL queries to remove repeated database requests in the booking calendar.
+- Reviewed Git merge requests and maintained Jest tests covering double booking, invalid time windows and customer cancellation flows.
+
+SELECTED PROJECT
+Release handover: documented rollback steps and trained a support colleague to diagnose failed notification jobs.
+
+EDUCATION
+BSc in Computing, Seaward Technical College, 2021
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

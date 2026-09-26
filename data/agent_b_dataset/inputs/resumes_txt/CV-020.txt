@@ -1,0 +1,27 @@
+Emery Das
+Data Reporting Analyst
+cv-020@example.com | Singapore
+
+PROFILE
+Data Reporting Analyst focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+SQL; Excel; Power BI; Data quality
+
+EXPERIENCE
+Data Reporting Analyst | Willow Vale Services
+2021-05 to 2026-08
+- Prepared weekly operational reports and clarified metric definitions with warehouse supervisors.
+- Created SQL queries and relational reporting views to reconcile dispatch, return and supplier data.
+- Tracked report changes in shared documents and validated totals manually against exported source files.
+
+SELECTED PROJECT
+Stock discrepancy review: traced recurring differences to late posting dates and documented a cut-off procedure for the reporting team.
+
+EDUCATION
+Diploma in Business Analytics, Southbank Institute, 2020
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

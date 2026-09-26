@@ -1,0 +1,27 @@
+Riley Goh
+Contract Software Developer
+cv-057@example.com | Singapore
+
+PROFILE
+Contract Software Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+JavaScript; Node.js; SQLite; Git; Mocha
+
+EXPERIENCE
+Contract Software Developer | Maple Quay Services
+2021-03 to 2024-02
+- Delivered Node.js HTTP endpoints for dispatch allocation and proof-of-delivery updates under paid contracts to a logistics SME.
+- Modelled dispatch jobs and driver assignments in SQLite and wrote SQL extracts used for daily delivery reconciliation.
+- Submitted changes through the client Git repository with code review and maintained Mocha tests for dispatch status transitions.
+
+SELECTED PROJECT
+Personal refresher, 2026: rebuilt a small dispatch demo with current dependencies and documented the migration steps. Career break from March 2024 to December 2025.
+
+EDUCATION
+Diploma in Digital Systems, Lantern Polytechnic, 2019
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

@@ -1,0 +1,27 @@
+Mika Raman
+Trainee Developer
+cv-009@example.com | Singapore
+
+PROFILE
+Trainee Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; FastAPI; MongoDB; Git; pytest
+
+EXPERIENCE
+Trainee Developer | Fern Vale Services
+2026-01 to 2026-08
+- Implemented FastAPI routes for a document upload queue during a paid traineeship, with validation and retry handling.
+- Used MongoDB for upload metadata. No SQL or relational database work is included in my training or employment projects.
+- Used Git pull requests and wrote pytest checks for duplicate uploads and invalid file types.
+
+SELECTED PROJECT
+Learning project: built a command-line file organiser and documented edge cases involving repeated filenames.
+
+EDUCATION
+Certificate in Programming, Elm Dock Training Centre, 2025
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

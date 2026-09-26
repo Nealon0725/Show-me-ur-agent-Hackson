@@ -1,0 +1,27 @@
+Skyler Ang
+Backend Engineer
+cv-026@example.com | Singapore
+
+PROFILE
+Backend Engineer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+Python; FastAPI; PostgreSQL; Git; pytest
+
+EXPERIENCE
+Backend Engineer | Juniper Vale Services
+Start date not stated to 2026-08
+- Implemented Python API endpoints for courier booking and cancellation, including input validation and duplicate request protection.
+- Designed PostgreSQL shipment tables and SQL queries for daily job reconciliation.
+- Worked with Git pull requests and added pytest regression tests for booking status changes.
+
+SELECTED PROJECT
+Shipment export: added a validation summary for operations staff before courier data was submitted.
+
+EDUCATION
+Diploma in Software Technology, Crestview College, 2021
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.

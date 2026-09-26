@@ -1,0 +1,27 @@
+Casey Ng
+Full Stack Developer
+cv-033@example.com | Singapore
+
+PROFILE
+Full Stack Developer focused on accurate day-to-day work and practical process improvement. Comfortable clarifying requests, documenting repeatable steps and handing over clear instructions to colleagues.
+
+SKILLS
+TypeScript; NestJS; PostgreSQL; Git; Jest; Vue
+
+EXPERIENCE
+Full Stack Developer | Willow Quay Services
+2023-07 to 2026-08
+- Implemented NestJS application endpoints and pricing rules for a subscription service, including request validation and event retries.
+- Added PostgreSQL migration scripts and relational constraints so customer plans, invoices and credit notes stayed consistent.
+- Used peer-reviewed Git commits and Jest unit tests plus end-to-end tests for subscription renewal and failed payments.
+
+SELECTED PROJECT
+Customer support console: built a Vue interface for looking up account events and exporting a support history.
+
+EDUCATION
+BEng in Computer Systems, Bayfront Technical Institute, 2023
+
+CERTIFICATIONS
+No professional certifications listed.
+
+SYNTHETIC RESUME - All people, employers, institutions and achievements are fictional.
