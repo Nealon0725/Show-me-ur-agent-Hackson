@@ -26,7 +26,9 @@ class APITests(unittest.TestCase):
                     return json.load(response)
             try:
                 with urlopen(base + '/') as response:
-                    self.assertIn('Recruitment Assistant', response.read().decode())
+                    self.assertIn('Clearhire', response.read().decode())
+                with urlopen(base + '/bundle.js') as response:
+                    self.assertIn('Candidate review', response.read().decode())
                 with urlopen(base + '/api/demo') as response:
                     demo = json.load(response)
                 xml = ('<?xml version="1.0"?><w:document '
@@ -47,6 +49,12 @@ class APITests(unittest.TestCase):
                 evaluated = post('/api/evaluate', demo)
                 self.assertTrue(evaluated['criteria_confirmed'])
                 self.assertIn('evaluation', evaluated['candidates'][0])
+                ui_result = post('/api/ui/evaluate', {
+                    'job_id': 'JD-003',
+                    'resumes': [{'name': 'candidate.docx', 'text': imported['resumes'][0]['text']}],
+                })
+                self.assertEqual(ui_result['candidates'][0]['jobId'], 'JD-003')
+                self.assertEqual(len(ui_result['candidates'][0]['criteria']), 4)
                 run = post('/api/runs', demo)
                 path = '/api/runs/' + run['id']
                 run = post(path + '/confirm', {})

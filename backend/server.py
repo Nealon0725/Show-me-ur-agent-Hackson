@@ -2,11 +2,14 @@ import argparse
 import base64
 import binascii
 import json
+import mimetypes
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
+from urllib.parse import unquote, urlparse
 from agents.workflow import Workflow
 from agents.llm_client import LLMClientError
 from agents.model_provider import parser_from_environment
+from agents.ui_adapter import evaluate_ui_resumes
 from tools.resume_reader import ResumeReadError, read_resume
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,13 +27,18 @@ def handler(workflow):
             self.wfile.write(body)
 
         def do_GET(self):
-            if self.path == '/':
-                self.reply(200, (ROOT / 'frontend/index.html').read_bytes(), 'text/html')
-            elif self.path == '/api/demo':
+            request_path = unquote(urlparse(self.path).path)
+            if request_path == '/':
+                self.reply(200, (ROOT / 'index.html').read_bytes(), 'text/html')
+            elif request_path in ('/bundle.js', '/styles.css', '/accessibility.css'):
+                path = ROOT / request_path.lstrip('/')
+                content_type = mimetypes.guess_type(path.name)[0] or 'application/octet-stream'
+                self.reply(200, path.read_bytes(), content_type)
+            elif request_path == '/api/demo':
                 self.reply(200, json.loads((ROOT / 'data/demo.json').read_text(encoding='utf-8')))
-            elif self.path.startswith('/api/runs/'):
+            elif request_path.startswith('/api/runs/'):
                 try:
-                    self.reply(200, workflow.store.get(self.path.split('/')[-1]))
+                    self.reply(200, workflow.store.get(request_path.split('/')[-1]))
                 except KeyError:
                     self.reply(404, {'error': 'Run not found.'})
             else:
@@ -70,6 +78,9 @@ def handler(workflow):
                 elif self.path == '/api/evaluate':
                     result = workflow.create(payload.get('jd'), payload.get('resumes'))
                     result = workflow.update(result['id'], 'confirm', {})
+                elif self.path == '/api/ui/evaluate':
+                    result = evaluate_ui_resumes(payload.get('job_id'), payload.get('resumes'),
+                                                 workflow.resume_parser)
                 elif self.path == '/api/runs':
                     result = workflow.create(payload.get('jd'), payload.get('resumes'))
                 else:

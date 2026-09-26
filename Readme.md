@@ -48,12 +48,11 @@ python -m unittest discover -s tests -v
 
 ## 三分钟 Demo
 
-1. 点击「载入示例」，再点击「开始评估」。示例均为虚构数据。
-2. 后端自动解析 JD、确认评估标准并筛选简历，网页直接显示结果。
-3. C001 技能证据完整，进入人工审核；C002 缺少 Xero 信息，Agent 生成追问草稿。
-4. 给 C002 的 Xero 问题填写 `I used Xero for invoice reconciliation for one year.`，选择「回答提供了相关证据」，记录回答。
-5. C002 的技能证据覆盖率从 78 提升到 100，进入人工审核。选择人工批准入围并填写理由。
-6. 查看 Agent 行动记录：SCREEN → REQUEST_INFORMATION → FOLLOWUP_RECORDED → RE_EVALUATE → HUMAN_REVIEW → HUMAN_DECISION。
+1. 在 Clearhire 中选择一个岗位，例如「Accounts Assistant」。
+2. 点击「Import résumés」，拖入 PDF 或 DOCX；一次最多 50 份，每份最多 5 MB。
+3. 点击「Analyse files」。后端读取文件、核对四项岗位证据，网页直接显示结果。
+4. 打开候选人查看逐项证据和原文；缺少信息显示为待澄清，不会被当成自动淘汰。
+5. 由招聘者添加评审备注、比较候选人并决定是否加入入围名单。
 
 ## 架构与分工接口
 
@@ -64,11 +63,13 @@ python -m unittest discover -s tests -v
 | agents/workflow.py | 状态流转、两轮上限、重新评估与人工决策 |
 | agents/llm_client.py | 学校 Gateway / OpenAI 的可替换 HTTP 客户端 |
 | agents/model_provider.py | 将模型结构化输出映射并校验为简历证据 |
+| agents/ui_adapter.py | 用保守证据语言分析三个 Clearhire 岗位，并转换为 UI 候选人结构 |
 | tools/store.py | SQLite 本地持久化 |
 | tools/resume_reader.py | PDF/DOCX 简历文字提取；扫描版 PDF 会提示人工处理 |
 | backend/server.py | 本地 HTTP API |
 | data/demo.json | 三份虚构简历与新加坡 SME Accounts Executive JD |
-| frontend/index.html | 无构建依赖的演示页面，可由 UI 同学替换 |
+| index.html / main.js / styles.css | 队友设计的 Clearhire UI，已连接 Python 后端 |
+| bundle.js | 由 `node build.mjs` 从 UI 源文件生成的浏览器脚本 |
 
 原仓库仅有 README 和 test.py；保留原 test.py，新增上述模块。
 
@@ -77,6 +78,7 @@ API（JSON）：
 - `GET /api/demo`：示例输入。
 - `POST /api/resume-files`：接收最多 50 份 PDF/DOCX，将文字交给现有评估流程；每份上限 5 MB。网页会逐份上传，避免同时占用大量内存。
 - `POST /api/evaluate`：`{"jd":"...", "resumes":["..."]}`，在后端自动解析和确认标准并直接返回评估结果，供网页主流程使用。
+- `POST /api/ui/evaluate`：接收 Clearhire 岗位 ID 和已提取简历，返回 UI 可直接展示的候选人、四项证据及保守状态。
 - `POST /api/runs`：`{"jd":"...", "resumes":["..."]}`，解析 JD，等待人工确认。
 - `GET /api/runs/{id}`：恢复完整状态。
 - `POST /api/runs/{id}/confirm`：`{}`，确认标准并筛选。
