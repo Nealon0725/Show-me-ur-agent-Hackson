@@ -67,6 +67,9 @@ def handler(workflow):
                             raise ValueError(f'{name or "Resume"}: invalid file content.') from exc
                         resumes.append({'name': name, 'text': read_resume(name, content)})
                     result = {'resumes': resumes}
+                elif self.path == '/api/evaluate':
+                    result = workflow.create(payload.get('jd'), payload.get('resumes'))
+                    result = workflow.update(result['id'], 'confirm', {})
                 elif self.path == '/api/runs':
                     result = workflow.create(payload.get('jd'), payload.get('resumes'))
                 else:
