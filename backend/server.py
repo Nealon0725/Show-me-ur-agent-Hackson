@@ -44,15 +44,15 @@ def handler(workflow):
                 return
             try:
                 length = int(self.headers.get('Content-Length', '0'))
-                if not 0 < length <= 70 * 1024 * 1024:
+                if not 0 < length <= 8 * 1024 * 1024:
                     raise ValueError('Invalid request size.')
                 payload = json.loads(self.rfile.read(length))
                 if not isinstance(payload, dict):
                     raise ValueError('Expected a JSON object.')
                 if self.path == '/api/resume-files':
                     files = payload.get('files')
-                    if not isinstance(files, list) or not 1 <= len(files) <= 10:
-                        raise ValueError('Select between 1 and 10 resume files.')
+                    if not isinstance(files, list) or not 1 <= len(files) <= 50:
+                        raise ValueError('Select between 1 and 50 resume files.')
                     resumes = []
                     for item in files:
                         if not isinstance(item, dict):

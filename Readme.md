@@ -7,8 +7,9 @@
 在仓库根目录运行：
 
 ```sh
-python3 -m pip install -r requirements.txt
-python -m backend.server
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m backend.server
 ```
 
 默认采用 `auto` 模式，优先顺序为学校 LLM Gateway、OpenAI、离线规则。学校提供 Gateway 后使用：
@@ -74,7 +75,7 @@ python -m unittest discover -s tests -v
 API（JSON）：
 
 - `GET /api/demo`：示例输入。
-- `POST /api/resume-files`：接收最多 10 份 PDF/DOCX，将文字交给现有评估流程；每份上限 5 MB。
+- `POST /api/resume-files`：接收最多 50 份 PDF/DOCX，将文字交给现有评估流程；每份上限 5 MB。网页会逐份上传，避免同时占用大量内存。
 - `POST /api/runs`：`{"jd":"...", "resumes":["..."]}`，解析 JD，等待人工确认。
 - `GET /api/runs/{id}`：恢复完整状态。
 - `POST /api/runs/{id}/confirm`：`{}`，确认标准并筛选。
