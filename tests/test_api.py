@@ -23,7 +23,7 @@ class APITests(unittest.TestCase):
                     return json.load(response)
             try:
                 with urlopen(base + '/') as response:
-                    self.assertIn('Recruitment Assistant', response.read().decode())
+                    self.assertIn('Clearhire', response.read().decode())
                 with urlopen(base + '/api/demo') as response:
                     demo = json.load(response)
                 with urlopen(base + '/api/dataset') as response:

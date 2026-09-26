@@ -10,8 +10,8 @@ class Workflow:
     def __init__(self, path, resume_parser=None):
         self.store = Store(path); self.resume_parser = resume_parser
 
-    def create(self, jd, resumes):
-        job = parse_jd(jd)
+    def create(self, jd, resumes, job=None):
+        job = job if job is not None else parse_jd(jd)
         job["criteria_version"] = 1
         if not isinstance(resumes, list) or not 1 <= len(resumes) <= 60: raise ValueError('Provide 1–60 resumes.')
         for resume in resumes: lines(resume)

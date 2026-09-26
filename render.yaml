@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: clearhire-agent
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m backend.server --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: RECRUITMENT_AGENT_PROVIDER
+        value: rules

@@ -137,6 +137,10 @@ def parse_resume(text, criteria):
     rows = evidence_rows(text)
     facts = {}
     for criterion in criteria:
+        if criterion.get('type') == 'role_requirement':
+            from agents.role_rules import role_fact
+            facts[criterion['id']] = role_fact(rows, criterion)
+            continue
         if criterion.get('type') == 'experience':
             facts[criterion['id']] = experience_fact(rows, criterion)
             continue

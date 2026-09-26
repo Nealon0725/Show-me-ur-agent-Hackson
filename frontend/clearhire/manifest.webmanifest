@@ -1,0 +1,13 @@
+{
+  "name": "Clearhire Recruitment Assistant",
+  "short_name": "Clearhire",
+  "description": "Evidence-first résumé review with human decisions.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f7",
+  "theme_color": "#f5f5f7",
+  "icons": [
+    { "src": "/app-icon.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
