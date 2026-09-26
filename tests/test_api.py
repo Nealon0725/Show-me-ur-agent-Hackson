@@ -1,7 +1,10 @@
+import base64
+import io
 import json
 import tempfile
 import threading
 import unittest
+import zipfile
 from http.server import HTTPServer
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -26,6 +29,18 @@ class APITests(unittest.TestCase):
                     self.assertIn('Recruitment Assistant', response.read().decode())
                 with urlopen(base + '/api/demo') as response:
                     demo = json.load(response)
+                xml = ('<?xml version="1.0"?><w:document '
+                       'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
+                       '<w:body><w:p><w:r><w:t>Candidate upload with Excel and Xero experience</w:t>'
+                       '</w:r></w:p></w:body></w:document>')
+                document = io.BytesIO()
+                with zipfile.ZipFile(document, 'w') as archive:
+                    archive.writestr('word/document.xml', xml)
+                imported = post('/api/resume-files', {'files': [{
+                    'name': 'candidate.docx',
+                    'content_base64': base64.b64encode(document.getvalue()).decode(),
+                }]})
+                self.assertIn('Excel and Xero', imported['resumes'][0]['text'])
                 run = post('/api/runs', demo)
                 path = '/api/runs/' + run['id']
                 run = post(path + '/confirm', {})
