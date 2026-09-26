@@ -29,8 +29,8 @@ class APITests(unittest.TestCase):
                 run = post('/api/runs', demo)
                 path = '/api/runs/' + run['id']
                 run = post(path + '/confirm', {})
-                self.assertEqual(run['candidates'][0]['action'], 'HUMAN_REVIEW')
-                self.assertEqual(run['candidates'][1]['action'], 'REQUEST_INFORMATION')
+                self.assertEqual(run['candidates'][0]['action'], 'SHORTLIST')
+                self.assertEqual(run['candidates'][1]['action'], 'REQUEST_INFO')
                 run = post(path + '/followup', {'candidate_id': 'C002', 'answers': {'xero': {'status': 'evidenced', 'evidence': 'I used Xero for invoice reconciliation.'}}})
                 self.assertEqual(run['candidates'][1]['evaluation']['score'], 100)
                 run = post(path + '/review', {'candidate_id': 'C002', 'decision': 'shortlist', 'reason': 'Reviewed all job requirements.'})
@@ -38,6 +38,7 @@ class APITests(unittest.TestCase):
                 with self.assertRaises(HTTPError) as error:
                     post('/api/runs', {'jd': '', 'resumes': []})
                 self.assertEqual(error.exception.code, 400)
+                error.exception.close()
             finally:
                 server.shutdown()
                 server.server_close()

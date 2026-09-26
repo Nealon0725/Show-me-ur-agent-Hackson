@@ -27,7 +27,7 @@ def handler(workflow):
                 self.reply(200, json.loads((ROOT / 'data/demo.json').read_text(encoding='utf-8')))
             elif self.path.startswith('/api/runs/'):
                 try:
-                    self.reply(200, workflow.store.get(self.path.split('/')[-1]))
+                    self.reply(200, workflow.get(self.path.split('/')[-1]))
                 except KeyError:
                     self.reply(404, {'error': 'Run not found.'})
             else:

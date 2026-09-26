@@ -2,6 +2,17 @@
 
 最小可运行的招聘流程演示。Python 3.10+，仅标准库；离线规则模式无需 API Key。
 
+## Agent B 整合更新（2026-09-26）
+
+- 已接入三个指标：已有证据覆盖率、可能覆盖率、证据完整度。
+- 已接入 SHORTLIST、REQUEST_INFO、HUMAN_REVIEW、LOW_MATCH 四种建议。冲突优先交人工复核，必需项明确不满足则 LOW_MATCH，必需项缺信息则追问，最多两轮。
+- 页面按动作、分数、完整度和候选人 ID 稳定排序，展示判断理由和证据行号。API 保留原始候选人数组顺序，通过 rank 表示排名。
+- provisional 表示仍存在追问或人工复核建议；final 仅代表当前规则排序，不是录用结果。人工决定不会将候选人移到排名末尾。
+- 补充回答复用已保存证据，只覆盖回答涉及的项目，再重新算分、判断动作和排名，不重复调用模型。
+- 旧记录读取时基于已保存证据补齐新字段，更新时保存。保留 score、unmet_requirements 和事件 detail 兼容字段。
+- 新建评估包含 criteria_version=1；修改 JD 仍需新建评估。人工决定只允许在 SHORTLIST_REVIEW、LOW_MATCH_REVIEW、HUMAN_REVIEW 状态提交，理由必填。
+- PDF/DOCX 读取、PII 屏蔽、学校 Gateway 真实联调和多人部署仍待完成。
+
 ## 启动
 
 在仓库根目录运行：
@@ -48,10 +59,10 @@ python -m unittest discover -s tests -v
 
 1. 点击「载入示例」，再点击「解析 JD，创建评估」。示例均为虚构数据。
 2. 审核提取出的必需 / 优先技能，再确认开始评估。
-3. C001 技能证据完整，进入人工审核；C002 缺少 Xero 信息，Agent 生成追问草稿。
+3. C001 显示 SHORTLIST 建议，等待人工审核；C002 缺少 Xero 信息，显示 REQUEST_INFO 和追问；C003 显示 LOW_MATCH，仍需人工审核。
 4. 给 C002 的 Xero 问题填写 `I used Xero for invoice reconciliation for one year.`，选择「回答提供了相关证据」，记录回答。
 5. C002 的技能证据覆盖率从 78 提升到 100，进入人工审核。选择人工批准入围并填写理由。
-6. 查看 Agent 行动记录：SCREEN → REQUEST_INFORMATION → FOLLOWUP_RECORDED → RE_EVALUATE → HUMAN_REVIEW → HUMAN_DECISION。
+6. 查看 Agent 行动记录：SCREEN → REQUEST_INFO → FOLLOWUP_RECORDED → RE_EVALUATE → SHORTLIST → HUMAN_DECISION。
 
 ## 架构与分工接口
 

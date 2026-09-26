@@ -19,12 +19,12 @@ class WorkflowTests(unittest.TestCase):
         run = self.workflow.update(self.run['id'], 'confirm', {})
         c = run['candidates'][0]
         self.assertEqual(c['evaluation']['score'], 40)
-        self.assertEqual(c['action'], 'REQUEST_INFORMATION')
+        self.assertEqual(c['action'], 'REQUEST_INFO')
         run = self.workflow.update(run['id'], 'followup', {'candidate_id': 'C001', 'answers': {
             'xero': {'status': 'evidenced', 'evidence': 'Used Xero for invoicing for one year.'},
             'gst': {'status': 'not_met', 'evidence': 'I have no GST experience.'}}})
         self.assertEqual(run['candidates'][0]['evaluation']['score'], 80)
-        self.assertEqual(run['candidates'][0]['action'], 'HUMAN_REVIEW')
+        self.assertEqual(run['candidates'][0]['action'], 'SHORTLIST')
         self.assertIsNone(run['candidates'][0]['decision'])
         run = self.workflow.update(run['id'], 'review', {'candidate_id': 'C001', 'decision': 'shortlist', 'reason': 'Reviewed skill evidence and other job requirements.'})
         self.assertEqual(Workflow(self.path).store.get(run['id']), run)
