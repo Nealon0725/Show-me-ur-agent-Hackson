@@ -45,6 +45,14 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(evaluate(text, parse_jd('Required: Excel')['criteria'])['details'][0]['status'], 'evidenced')
         self.assertEqual(evaluate(text, parse_jd('Required: Excel for financial tasks')['criteria'])['details'][0]['status'], 'unknown')
 
+    def test_conservative_aliases_find_original_evidence(self):
+        criteria = parse_jd('Required: Microsoft Excel for financial tasks\nGST preferred')['criteria']
+        result = evaluate('Managed spreadsheet reporting for monthly financial reconciliation.\nPrepared goods and services tax reports.', criteria)
+        details = {item['id']: item for item in result['details']}
+        self.assertEqual(details['excel']['status'], 'evidenced')
+        self.assertEqual(details['gst']['status'], 'evidenced')
+        self.assertIn('spreadsheet reporting', details['excel']['evidence'][0].lower())
+
     def test_followup_preserves_resume_source(self):
         criteria = parse_jd('Required: Xero')['criteria']
         result = evaluate('Familiar with Xero.', criteria, {'xero': {'status': 'evidenced', 'evidence': 'Used Xero for invoices.'}})

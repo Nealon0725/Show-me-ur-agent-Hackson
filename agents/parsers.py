@@ -1,7 +1,20 @@
 """Conservative English-text demo parsers; replace these with an LLM adapter later."""
 import re
 
-SKILLS = ('Excel', 'Xero', 'GST', 'bookkeeping', 'invoicing', 'SQL', 'Python', 'SAP', 'accounting')
+# Canonical skills and conservative aliases used by the offline extractor.  Aliases
+# are evidence hints; the original resume sentence is always retained as evidence.
+SKILL_ALIASES = {
+    'Excel': ('Excel', 'Microsoft Excel', 'spreadsheets', 'spreadsheet reporting'),
+    'Xero': ('Xero',),
+    'GST': ('GST', 'goods and services tax'),
+    'bookkeeping': ('bookkeeping', 'book keeping', 'book-keeping', 'maintained books'),
+    'invoicing': ('invoicing', 'invoices', 'billing', 'accounts receivable'),
+    'SQL': ('SQL', 'structured query language'),
+    'Python': ('Python',),
+    'SAP': ('SAP',),
+    'accounting': ('accounting', 'accountancy', 'financial accounting'),
+}
+SKILLS = tuple(SKILL_ALIASES)
 EXPERIENCE_RE = re.compile(r'(?P<low>\d+(?:\.\d+)?)\s*(?:[–—-]\s*(?P<high>\d+(?:\.\d+)?))?\s*\+?\s*years?\b', re.I)
 MONTHS_RE = re.compile(r'(?P<months>\d+(?:\.\d+)?)\s*months?\b', re.I)
 ACCOUNTING_CONTEXT_RE = re.compile(r'\b(account|accounting|accounts|finance|financial|bookkeep|invoic|gst|tax|audit|ledger|payroll)\w*\b', re.I)
@@ -14,7 +27,9 @@ def lines(text):
 
 
 def contains(text, skill):
-    return bool(re.search(r'\b' + re.escape(skill) + r'\b', text, re.I))
+    aliases = SKILL_ALIASES.get(skill, (skill,))
+    return any(re.search(r'(?<!\w)' + re.escape(alias) + r'(?!\w)', text, re.I)
+               for alias in aliases)
 
 
 def parse_jd(text):
@@ -25,7 +40,7 @@ def parse_jd(text):
         if evidence:
             preferred = all(re.search(r'preferred|nice.to.have|optional|a plus', row, re.I) for row in evidence)
             financial = skill == 'Excel' and any(re.search(r'financial|finance|reconciliation', row, re.I) for row in evidence)
-            criteria.append({'id': skill.lower(), 'label': skill, 'required': not preferred,
+            criteria.append({'id': skill.lower(), 'label': skill, 'aliases': list(SKILL_ALIASES[skill]), 'required': not preferred,
                              'weight': 1 if preferred else 2, 'source': evidence[0],
                              'type': 'skill', 'scored': True,
                              'context': 'financial' if financial else None,

@@ -57,7 +57,7 @@ class LLMResumeParser:
         model_input = {
             'criteria': [{key: criterion.get(key) for key in
                           ('id', 'label', 'description', 'type', 'required', 'scored', 'context',
-                           'minimum_years', 'target_years', 'source')}
+                           'minimum_years', 'target_years', 'aliases', 'source')}
                          for criterion in criteria],
             'resume_lines': numbered,
         }
