@@ -44,6 +44,9 @@ class APITests(unittest.TestCase):
                 with self.assertRaises(HTTPError) as too_many:
                     post('/api/resume-files', {'files': [{}] * 51})
                 self.assertEqual(too_many.exception.code, 400)
+                evaluated = post('/api/evaluate', demo)
+                self.assertTrue(evaluated['criteria_confirmed'])
+                self.assertIn('evaluation', evaluated['candidates'][0])
                 run = post('/api/runs', demo)
                 path = '/api/runs/' + run['id']
                 run = post(path + '/confirm', {})

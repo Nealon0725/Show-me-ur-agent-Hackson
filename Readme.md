@@ -48,8 +48,8 @@ python -m unittest discover -s tests -v
 
 ## 三分钟 Demo
 
-1. 点击「载入示例」，再点击「解析 JD，创建评估」。示例均为虚构数据。
-2. 审核提取出的必需 / 优先技能，再确认开始评估。
+1. 点击「载入示例」，再点击「开始评估」。示例均为虚构数据。
+2. 后端自动解析 JD、确认评估标准并筛选简历，网页直接显示结果。
 3. C001 技能证据完整，进入人工审核；C002 缺少 Xero 信息，Agent 生成追问草稿。
 4. 给 C002 的 Xero 问题填写 `I used Xero for invoice reconciliation for one year.`，选择「回答提供了相关证据」，记录回答。
 5. C002 的技能证据覆盖率从 78 提升到 100，进入人工审核。选择人工批准入围并填写理由。
@@ -76,6 +76,7 @@ API（JSON）：
 
 - `GET /api/demo`：示例输入。
 - `POST /api/resume-files`：接收最多 50 份 PDF/DOCX，将文字交给现有评估流程；每份上限 5 MB。网页会逐份上传，避免同时占用大量内存。
+- `POST /api/evaluate`：`{"jd":"...", "resumes":["..."]}`，在后端自动解析和确认标准并直接返回评估结果，供网页主流程使用。
 - `POST /api/runs`：`{"jd":"...", "resumes":["..."]}`，解析 JD，等待人工确认。
 - `GET /api/runs/{id}`：恢复完整状态。
 - `POST /api/runs/{id}/confirm`：`{}`，确认标准并筛选。

@@ -11,8 +11,8 @@ class Workflow:
 
     def create(self, jd, resumes):
         job = parse_jd(jd)
-        if not isinstance(resumes, list) or not 1 <= len(resumes) <= 30:
-            raise ValueError('Provide 1–30 resumes.')
+        if not isinstance(resumes, list) or not 1 <= len(resumes) <= 50:
+            raise ValueError('Provide 1–50 resumes.')
         for resume in resumes:
             lines(resume)
         state = {'job': job, 'criteria_confirmed': False, 'events': [], 'candidates': [
