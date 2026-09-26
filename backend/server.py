@@ -1,10 +1,13 @@
 import argparse
+import base64
+import binascii
 import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from agents.workflow import Workflow
 from agents.llm_client import LLMClientError
 from agents.model_provider import parser_from_environment
+from tools.resume_reader import ResumeReadError, read_resume
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -41,12 +44,30 @@ def handler(workflow):
                 return
             try:
                 length = int(self.headers.get('Content-Length', '0'))
-                if not 0 < length <= 2000000:
+                if not 0 < length <= 70 * 1024 * 1024:
                     raise ValueError('Invalid request size.')
                 payload = json.loads(self.rfile.read(length))
                 if not isinstance(payload, dict):
                     raise ValueError('Expected a JSON object.')
-                if self.path == '/api/runs':
+                if self.path == '/api/resume-files':
+                    files = payload.get('files')
+                    if not isinstance(files, list) or not 1 <= len(files) <= 10:
+                        raise ValueError('Select between 1 and 10 resume files.')
+                    resumes = []
+                    for item in files:
+                        if not isinstance(item, dict):
+                            raise ValueError('Each uploaded file must be an object.')
+                        name = item.get('name')
+                        encoded = item.get('content_base64')
+                        if not isinstance(encoded, str):
+                            raise ValueError(f'{name or "Resume"}: file content is missing.')
+                        try:
+                            content = base64.b64decode(encoded, validate=True)
+                        except (binascii.Error, ValueError) as exc:
+                            raise ValueError(f'{name or "Resume"}: invalid file content.') from exc
+                        resumes.append({'name': name, 'text': read_resume(name, content)})
+                    result = {'resumes': resumes}
+                elif self.path == '/api/runs':
                     result = workflow.create(payload.get('jd'), payload.get('resumes'))
                 else:
                     parts = self.path.strip('/').split('/')
@@ -59,7 +80,7 @@ def handler(workflow):
                 self.reply(404, {'error': 'Run not found.'})
             except LLMClientError as exc:
                 self.reply(502, {'error': str(exc)})
-            except (ValueError, TypeError, UnicodeDecodeError) as exc:
+            except (ResumeReadError, ValueError, TypeError, UnicodeDecodeError) as exc:
                 self.reply(400, {'error': str(exc)})
 
     return Handler
