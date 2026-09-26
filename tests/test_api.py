@@ -41,6 +41,9 @@ class APITests(unittest.TestCase):
                     'content_base64': base64.b64encode(document.getvalue()).decode(),
                 }]})
                 self.assertIn('Excel and Xero', imported['resumes'][0]['text'])
+                with self.assertRaises(HTTPError) as too_many:
+                    post('/api/resume-files', {'files': [{}] * 51})
+                self.assertEqual(too_many.exception.code, 400)
                 run = post('/api/runs', demo)
                 path = '/api/runs/' + run['id']
                 run = post(path + '/confirm', {})
