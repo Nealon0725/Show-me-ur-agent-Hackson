@@ -1,0 +1,71 @@
+/* Clearhire: calm surfaces, clear reading hierarchy, compact mobile review. */
+:root { --bg:#f3f6fb; --ink:#192b43; --brand:#3164dc; --brand-dark:#254fb7; --line:#e3e9f2; --shadow:0 6px 24px #243b6010; --radius:18px; }
+body { background:radial-gradient(ellipse at 85% 0,#e6edff 0,transparent 40%),#f3f6fb; }
+.sidebar { background:#f9fbfe; border-right:1px solid #e3e9f2; }
+.topbar { background:#ffffffeb; border-bottom:1px solid var(--line); }
+.content { max-width:1800px; margin:auto; }
+h1 { font-size:clamp(28px,3vw,40px); letter-spacing:-.035em; }
+.subtitle { color:#64748b; line-height:1.7; }
+.btn { border-radius:12px; min-height:44px; box-shadow:none; }
+.btn.primary { background:var(--brand); box-shadow:0 4px 10px #3164dc20; }
+.btn.primary:hover { background:var(--brand-dark); }
+.job-bar { border:1px solid #dbe5f4; box-shadow:none; background:linear-gradient(110deg,#fff,#f3f7ff); }
+.metrics { gap:12px; }
+.metric { min-height:108px; padding:18px 20px; box-shadow:none; border:1px solid var(--line); }
+.metric strong { font-size:32px; font-variant-numeric:tabular-nums; color:#203858; }
+.metric-side { display:grid; background:#edf2ff; color:#3164dc; }
+.metric-label { color:#536680; font-weight:600; }
+.metric-foot { color:#718096; }
+.panel { box-shadow:var(--shadow); border:1px solid var(--line); }
+.candidate-table tbody tr.selected { background:#edf3ff; box-shadow:inset 3px 0 var(--brand); }
+.candidate-table tbody tr:hover { background:#f4f7fd; }
+.person-name { color:#233b59; }
+.avatar { background:#edf2fc !important; color:#4165a0 !important; }
+.detail-top { color:#64748b; font-weight:600; }
+.detail-identity { background:linear-gradient(180deg,#f6f9ff,#fff); }
+.detail-identity h2 { overflow-wrap:anywhere; font-size:22px; }
+.detail-tags .tag { max-width:100%; overflow-wrap:anywhere; white-space:normal; }
+.detail-tags .tag:last-child { font-size:10px; color:#7b8799; }
+.detail-summary { margin-top:8px; }
+.detail-tabs { background:#fafcff; gap:20px; }
+.detail-tabs .tab { min-height:48px; font-size:13px; }
+.detail-body { max-height:65vh; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; }
+.detail-footer { background:#fff; padding-bottom:max(15px,env(safe-area-inset-bottom)); }
+.profile-grid { display:grid; gap:12px; }
+.profile-card { padding:16px; border:1px solid var(--line); border-radius:13px; background:#fff; min-width:0; }
+.profile-card h3 { display:flex; align-items:center; gap:8px; font-size:13px; color:#334e70; margin:0 0 12px; }
+.profile-card h3 svg { width:16px; height:16px; color:var(--brand); }
+.profile-card p { font-size:13px; line-height:1.8; white-space:pre-wrap; overflow-wrap:anywhere; margin:0; }
+.profile-card .skill-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.profile-empty { color:#758398; background:#f5f7fb; padding:10px 12px; border-radius:8px; font-size:12px; }
+.profile-notice { background:#edf3ff; color:#456187; border-radius:12px; padding:14px; font-size:12px; line-height:1.8; margin-bottom:14px; }
+.profile-source { margin-top:14px; border:1px solid var(--line); border-radius:12px; padding:14px; }
+.profile-source summary { cursor:pointer; color:var(--brand); font-size:13px; font-weight:600; }
+.profile-source pre { white-space:pre-wrap; overflow-wrap:anywhere; font:12px/1.8 var(--font); color:#52647b; max-height:300px; overflow:auto; margin-top:14px; }
+.agent-summary { background:#f0f5ff; border:1px solid #dbe6fb; color:#334e70; line-height:1.7; }
+.criterion-title { line-height:1.6; flex-wrap:wrap; }
+.criterion-quote { line-height:1.85; color:#586c83; }
+.search { background:#f7f9fc; min-height:42px; }
+.search:focus-within { border-color:var(--brand); }
+@media (max-width:720px) {
+ .content { padding:22px 14px 28px; }
+ .heading-actions { margin-top:16px; gap:10px; }
+ .heading-actions .btn { flex:1; }
+ .metrics { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:14px 0 18px; }
+ .metric:first-child { grid-column:auto; }
+ .metric { min-height:100px; padding:12px 10px; border-radius:14px; align-items:flex-start; }
+ .metric strong { font-size:27px; margin-top:9px; }
+ .metric-label { font-size:11px; }
+ .metric-foot { font-size:10px; line-height:1.5; margin-top:5px; }
+ .metric-side { display:none; }
+ .job-bar { padding:16px; }
+ .detail-panel { scroll-margin-top:76px; }
+ .detail-body { max-height:none; overflow:visible; padding:16px; }
+ .detail-identity { padding:16px; }
+ .detail-summary { margin-left:16px; margin-right:16px; }
+ .detail-footer .btn { min-height:46px; }
+ .search input, .modal input, .modal textarea, .modal select { font-size:16px; }
+ .pagination-buttons button { min-width:36px; min-height:36px; }
+ .topbar { padding-top:env(safe-area-inset-top); height:calc(58px + env(safe-area-inset-top)); }
+}
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }

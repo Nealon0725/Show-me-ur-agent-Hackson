@@ -1,5 +1,5 @@
-const CACHE = 'clearhire-shell-v1';
-const SHELL = ['/', '/styles.css', '/accessibility.css', '/apple-theme.css', '/bundle.js', '/app-icon.png'];
+const CACHE = 'clearhire-shell-v2';
+const SHELL = ['/', '/styles.css', '/accessibility.css', '/apple-theme.css', '/refined-theme.css', '/bundle.js', '/app-icon.png'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));

@@ -72,6 +72,22 @@ const connection = {ready: false, mode: 'rules', model: null, busy: false};
 let pendingBatch = [], pendingRun = null;
 const runCache = new Map();
 
+profileBody = function(c) {
+  const missing = `<div class="profile-empty">${c.synthetic ? t('No information listed', '暂无记录') : t('Not structured yet — check the original below', '待整理 · 请核对下方简历原文')}</div>`;
+  const paragraph = value => value ? `<p>${esc(value)}</p>` : missing;
+  const sections = [
+    [t('Contact', '联系方式'), 'users', paragraph(c.email)],
+    [t('Skills', '专业技能'), 'checkcircle', c.skills?.length ? `<div class="skill-tags">${c.skills.map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div>` : missing],
+    [t('Education', '教育经历'), 'file', paragraph(c.education)],
+    [t('Experience', '工作经历'), 'briefcase', c.experience?.length ? c.experience.map(e=>paragraph([e.title,e.employer,[e.start_month,e.end_month].filter(Boolean).join(' – ')].filter(Boolean).join('\n'))).join('') : missing],
+    [t('Projects', '项目经历'), 'grid', paragraph(c.project)],
+    [t('Certifications', '资格证书'), 'shield', paragraph(c.certifications)]
+  ];
+  const notice = !c.synthetic ? `<div class="profile-notice">${t('Resume text is available. Automatic profile structuring is not connected yet; pending fields do not mean the information is absent from your resume. Role evidence analysis is separate.', '已读取简历文字。目前尚未接入个人资料的自动整理；“待整理”不代表你的简历缺少这些信息。岗位证据分析独立进行。')}</div>` : '';
+  return notice + `<div class="profile-grid">${sections.map(([title,i,body])=>`<section class="profile-card"><h3>${icon(i)}${title}</h3>${body}</section>`).join('')}</div>` +
+    (!c.synthetic && c.text ? `<details class="profile-source"><summary>${t('Read extracted resume text', '查看已提取的简历原文')}</summary><pre>${esc(c.text)}</pre></details>` : '');
+};
+
 async function agentApi(path, body) {
   let response;
   try {
