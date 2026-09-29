@@ -2,6 +2,7 @@
 import os
 
 from agents.llm_client import LLMClient, LLMClientError
+from agents.pii import redact_contact_pii
 
 
 STATUSES = ('evidenced', 'not_met', 'unknown', 'needs_review')
@@ -59,7 +60,7 @@ class LLMResumeParser:
                           ('id', 'label', 'description', 'type', 'required', 'scored', 'context',
                            'minimum_years', 'target_years', 'aliases', 'source')}
                          for criterion in criteria],
-            'resume_lines': numbered,
+            'resume_lines': [dict(item, text=redact_contact_pii(item['text'])) for item in numbered],
         }
         llm_result = self.client.generate_json(INSTRUCTIONS, model_input, OUTPUT_SCHEMA, 'resume_evidence')
         result = llm_result.data
